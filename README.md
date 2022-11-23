@@ -52,3 +52,47 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
 
 
 ```
+
+
+### Configuration pour la contribution.
+
+##### For mysql
+```Bash
+
+    # pour avoir le code source
+    git clone <repo_url>
+    cd  <repo_name>
+
+
+    # pour creer ta branche
+    git branch mysql
+    # pour synchroniser avec github
+    git push --set-upstream origin master
+
+    # pour push les changement locaux
+    git add *
+    git commit -m "+mysql: your commit message"
+    git push origin mysql
+
+```
+
+
+##### For postgresql
+```Bash
+
+    # pour avoir le code source
+    git clone <repo_url>
+    cd  <repo_name>
+
+
+    # pour creer ta branche
+    git branch postgresql
+    # pour synchroniser avec github
+    git push --set-upstream origin master
+
+    # pour push les changement locaux
+    git add *
+    git commit -m "+postgresql: your commit message"
+    git push origin postgresql
+    
+```

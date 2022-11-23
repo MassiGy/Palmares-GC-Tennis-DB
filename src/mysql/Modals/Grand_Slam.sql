@@ -1,0 +1,10 @@
+DROP TABLE Grand_Slam;
+
+
+CREATE TABLE IF NOT EXISTS Grand_Slam(
+    GC_ID INT PRIMARY KEY AUTO_INCREMENT,
+    GC_NAME VARCHAR(32) NOT NULL CHECK IN ("Australian Open","Roland Garros","Wimbledon", "US Open"),
+    GC_Location VARCHAR(32) NOT NULL,
+    GC_Ground VARCHAR(32) NOT NULL CHECK IN ("GRASS", "HARD", "CLAY"),
+    GC_Creation VARCHAR(32) NOT NULL,
+);

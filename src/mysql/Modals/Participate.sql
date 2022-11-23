@@ -1,14 +1,17 @@
-DROP TABLE IF EXISTS Participate CASCADE;
+DROP TABLE IF EXISTS Participate;
 
 CREATE TABLE IF NOT EXISTS Participate (
-    Result VARCHAR(64) NOT NULL CHECK (Resault  IN ("1/64 Finalist", "1/32 Finalist", "1/16 Finalist", "1/8 Finalist", "1/4 Finalist", "1/2 Finalist", "Runner-up", "Champion")),
+    Result VARCHAR(64) NOT NULL CHECK (Result  IN ("1/64 Finalist", "1/32 Finalist", "1/16 Finalist", "1/8 Finalist", "1/4 Finalist", "1/2 Finalist", "Runner-up", "Champion")),
     Category VARCHAR(64) NOT NULL CHECK (Category IN ("Men’s Singles", "Women’s Singles", "Men’s Doubles", "Women’s Doubles", "Mixted Doubles")),
     _Year INT NOT NULL CHECK (_Year IN (2022, 2021)),
+
     GC_ID INT,
     Player_ID INT,
+
     FOREIGN KEY (GC_ID) REFERENCES Grand_Slam(GC_ID),
     FOREIGN KEY (Player_ID) REFERENCES Player(Player_ID),
-    PRIMARY KEY(GC_ID, Player_ID, _Year)
+
+    PRIMARY KEY(Player_ID,GC_ID, _Year)
 );
 
 
@@ -237,7 +240,7 @@ INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (25, 
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (80, 1, 2021, 'Men’s Singles', '1/64 Finalist');
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (27, 1, 2021, 'Men’s Singles', '1/16 Finalist');
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (44, 1, 2021, 'Men’s Singles', '1/64 Finalist');
-INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (77, 1, 2021, 'Men’s Singles', '1/32 Finalist');
+-- INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (77, 1, 2021, 'Men’s Singles', '1/32 Finalist');
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (114, 1, 2021, 'Men’s Singles', '1/64 Finalist');
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (155, 1, 2021, 'Men’s Singles', '1/64 Finalist');
 INSERT INTO Participate (Player_ID, GC_ID, _Year, Category, Result) VALUES (100, 1, 2021, 'Men’s Singles', '1/8 Finalist');

@@ -1,5 +1,6 @@
 SHOW DATABASES;
-CREATE DATABASE IF NOT EXISTS PalmaresGCTennis_Mysql;
+DROP DATABASE IF EXISTS PalmaresGCTennis_Mysql;
+CREATE DATABASE PalmaresGCTennis_Mysql;
 USE  PalmaresGCTennis_Mysql;
 STATUS;
 

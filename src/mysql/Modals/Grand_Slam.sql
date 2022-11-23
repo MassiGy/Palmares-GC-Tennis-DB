@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Grand_Slam CASCADE;
+DROP TABLE IF EXISTS Grand_Slam;
 
 
 CREATE TABLE IF NOT EXISTS Grand_Slam(
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Grand_Slam(
 
 
 
-INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Rolland Garros', 'France', 'Clay', 1891);
+INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Rolland Garros', 'Paris', 'Clay', 1891);
 INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Wimbledon', 'London', 'Grass', 1877);
 INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'US Open', 'New York City', 'Hard', 1881);
 INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Australian Open', 'Melbourne', 'Hard', 1905);

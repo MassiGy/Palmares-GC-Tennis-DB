@@ -18,7 +18,7 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
 
 
 ### Modèle Entité / Association.
-![image](./doc/shema-entites-associations.png)
+![image](./doc/shema-entites-associations.jpeg)
 
 
 

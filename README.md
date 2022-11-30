@@ -29,25 +29,28 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
     .
     ├── doc
     │   ├── P16_PalmaresGCTennis.pdf
-    │   └── shema-entites-associations.png
+    │   ├── shema-entites-associations.jpeg
+    │   ├── shema-grand-slam.jpeg
+    │   ├── shema-participate.jpeg
+    │   └── shema-player.jpeg
     ├── README.md
     └── src
         ├── mysql
         │   ├── index.sql
         │   ├── Modals
-        │   │   ├── Grand_Slam.sql
-        │   │   ├── Participate.sql
-        │   │   └── Player.sql
+        │   │   ├── P16_Grand_Slam.sql
+        │   │   ├── P16_Participate.sql
+        │   │   └── P16_Player.sql
         │   └── setup.sql
         └── postgresql
             ├── index.sql
             ├── Modals
-            │   ├── Grand_Slam.sql
-            │   ├── Participate.sql
-            │   └── Player.sql
+            │   ├── P16_Grand_Slam.sql
+            │   ├── P16_Participate.sql
+            │   └── P16_Player.sql
             └── setup.sql
 
-    6 directories, 13 files
+    6 directories, 16 files
 
 
 

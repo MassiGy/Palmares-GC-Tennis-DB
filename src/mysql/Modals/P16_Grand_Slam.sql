@@ -10,8 +10,7 @@ CREATE TABLE IF NOT EXISTS P16_Grand_Slam(
 );
 
 
-
-INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Roland Garros', 'Paris', 'Clay', 1891);
-INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Wimbledon', 'London', 'Grass', 1877);
-INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'US Open', 'New York City', 'Hard', 1881);
-INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Australian Open', 'Melbourne', 'Hard', 1905);  
+INSERT INTO P16_Grand_Slam (GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ('Roland Garros', 'Paris', 'Clay', 1891);
+INSERT INTO P16_Grand_Slam (GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ('Wimbledon', 'London', 'Grass', 1877);
+INSERT INTO P16_Grand_Slam (GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ('US Open', 'New York City', 'Hard', 1881);
+INSERT INTO P16_Grand_Slam (GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ('Australian Open', 'Melbourne', 'Hard', 1905);

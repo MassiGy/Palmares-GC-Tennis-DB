@@ -9,502 +9,505 @@ CREATE TABLE IF NOT EXISTS P16_Player (
     Player_ATP_Rank INT -- NOT NULL
 );
 
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Novak', 'Djokovic', 'Man', 'SRB', 5);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yoshihito', 'Nishioka', 'Man', 'JPN', 36);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alex', 'Molcan', 'Man', 'SVK', 50);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Federico', 'Coria', 'Man', 'ARG', 67);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aljaz', 'Bedene', 'Man', 'SLO', 345);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Christopher', 'O Connell', 'Man', 'AUS', 79);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pablo', 'Cuevas', 'Man', 'URU', 245);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jenson', 'Brooksby', 'Man', 'USA', 48);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Grigor', 'Dimitrov', 'Man', 'BUL', 28);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marcos', 'Giron', 'Man', 'USA', 61);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Borna', 'Coric', 'Man', 'CRO', 26);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Carlos', 'Taberner', 'Man', 'ESP', 167);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daniel', 'Altmaier', 'Man', 'GER', 77);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jaume', 'Munar', 'Man', 'ESP', 57);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrey', 'Kuznetsov', 'Man', 'RUS', 446);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Diego', 'Schwartzman', 'Man', 'ARG', 25);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Felix', 'Auger-Aliassime', 'Man', 'CAN', 6);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Juan Pablo', 'Varillas', 'Man', 'PER', 107);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Camilo', 'Ugo Carabelli', 'Man', 'ARG', 128);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aslan', 'Karatsev', 'Man', 'RUS', 59);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alessandro', 'Giannessi', 'Man', 'ITA', 268);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Borna', 'Gojo', 'Man', 'CRO', 145);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Filip', 'Krajinovic', 'Man', 'SRB', 55);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Reilly', 'Opelka', 'Man', 'USA', 38);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Botic', 'Van de Zandschulp', 'Man', 'NED', 35);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pavel', 'Kotov', 'Man', 'RUS', 99);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Fabio', 'Fognini', 'Man', 'ITA', 56);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexei', 'Popyrin', 'Man', 'AUS', 121);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Stan', 'Wawrinka', 'Man', 'SUI', 151);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Corentin', 'Moutet', 'Man', 'FRA', 51);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jordan', 'Thompson', 'Man', 'AUS', 84);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rafael', 'Nadal', 'Man', 'ESP', 2);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexander', 'Zverev', 'Man', 'GER', 12);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sebastian', 'Ofner', 'Man', 'AUT', 192);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Dusan', 'Lajovic', 'Man', 'SRB', 102);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sebastian', 'Baez', 'Man', 'ARG', 43);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Brandon', 'Nakashima', 'Man', 'USA', 47);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kamil', 'Majchrzak', 'Man', 'POL', 78);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tallon', 'Griekspoor', 'Man', 'NED', 96);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alejandro', 'Davidovich Fokina', 'Man', 'ESP', 31);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('John', 'Isner', 'Man', 'USA', 41);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Quentin', 'Halys', 'Man', 'FRA', 64);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Taro', 'Daniel', 'Man', 'JPN', 94);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Gregoire', 'Barrere', 'Man', 'FRA', 90);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Michael', 'Mmoh', 'Man', 'USA', 110);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Bernabe', 'Zapata Miralles', 'Man', 'ESP', 74);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Santiago', 'Rodriguez Taverna', 'Man', 'ARG', 175);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Taylor', 'Fritz', 'Man', 'USA', 9);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cameron', 'Norrie', 'Man', 'GBR', 14);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Manuel', 'Guinard', 'Man', 'FRA', 148);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jason', 'Kubler', 'Man', 'AUS', 109);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Denis', 'Kudla', 'Man', 'USA', 108);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Hugo', 'Dellien', 'Man', 'BOL', 117);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Dominic', 'Thiem', 'Man', 'AUT', 106);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nuno', 'Borges', 'Man', 'POR', 91);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Karen', 'Khachanov', 'Man', 'RUS', 20);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sebastian', 'Korda', 'Man', 'USA', 34);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('John', 'Millman', 'Man', 'AUS', 150);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lloyd', 'Harris', 'Man', 'RSA', 237);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Richard', 'Gasquet', 'Man', 'FRA', 70);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Albert', 'Ramos-Vinolas', 'Man', 'ESP', 39);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Thanasi', 'Kokkinakis', 'Man', 'AUS', 95);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Juan Ignacio', 'Londero', 'Man', 'ARG', 238);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Carlos', 'Alcaraz', 'Man', 'ESP', 1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Casper', 'Ruud', 'Man', 'NOR', 3);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jo-Wilfried', 'Tsonga', 'Man', 'FRA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emil', 'Ruusuvuori', 'Man', 'FIN', 40);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ugo', 'Humbert', 'Man', 'FRA', 87);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Joao', 'Sousa', 'Man', 'POR', 82);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Chun-Hsin', 'Tseng', 'Man', 'TPE', 88);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Peter', 'Gojowczyk', 'Man', 'GER', 233);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lorenzo', 'Sonego', 'Man', 'ITA', 45);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Frances', 'Tiafoe', 'Man', 'USA', 19);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Benjamin', 'Bonzi', 'Man', 'FRA', 60);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jiri', 'Lehecka', 'Man', 'CZE', 81);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('David', 'Goffin', 'Man', 'BEL', 53);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marcos', 'Cecchinato', 'Man', 'ITA', 105);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pablo', 'Andujar', 'Man', 'ESP', 123);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Giulio', 'Zeppieri', 'Man', 'ITA', 162);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Hubert', 'Hurkacz', 'Man', 'POL', 10);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Denis', 'Shapovalov', 'Man', 'CAN', 18);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Holger', 'Rune', 'Man', 'DEN', 11);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pedro', 'Martinez', 'Man', 'ESP', 62);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Henri', 'Laaksonen', 'Man', 'SUI', 171);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Norbert', 'Gombos', 'Man', 'SVK', 116);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pedro', 'Cachin', 'Man', 'ARG', 54);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Hugo', 'Gaston', 'Man', 'FRA', 111);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alex', 'De Minaur', 'Man', 'AUS', 24);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daniel', 'Evans', 'Man', 'GBR', 27);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Francisco', 'Cerundolo', 'Man', 'ARG', 30);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mikael', 'Ymer', 'Man', 'SWE', 71);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('James', 'Duckworth', 'Man', 'AUS', 172);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lucas', 'Pouille', 'Man', 'FRA', 386);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zdenek', 'Kolar', 'Man', 'CZE', 249);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lorenzo', 'Musetti', 'Man', 'ITA', 23);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Stefanos', 'Tsitsipas', 'Man', 'GRE', 4);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrey', 'Rublev', 'Man', 'RUS', 8);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Soonwoo', 'Kwon', 'Man', 'KOR', 83);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Adrian', 'Mannarino', 'Man', 'FRA', 46);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Federico', 'Delbonis', 'Man', 'ARG', 126);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Benoit', 'Paire', 'Man', 'FRA', 180);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ilya', 'Ivashka', 'Man', 'BLR', 75);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cristian', 'Garin', 'Man', 'CHI', 85);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tommy', 'Paul', 'Man', 'USA', 33);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nikoloz', 'Basilashvili', 'Man', 'GEO', 92);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maxime', 'Cressy', 'Man', 'USA', 32);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mackenzie', 'McDonald', 'Man', 'USA', 63);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Franco', 'Agamenone', 'Man', 'ITA', 139);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Roberto', 'Carballes Baena', 'Man', 'ESP', 76);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Oscar', 'Otte', 'Man', 'GER', 65);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Bjorn', 'Fratangelo', 'Man', 'USA', 313);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jannik', 'Sinner', 'Man', 'ITA', 15);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pablo', 'Carreno Busta', 'Man', 'ESP', 13);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Gilles', 'Simon', 'Man', 'FRA', 143);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jiri', 'Vesely', 'Man', 'CZE', 112);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Steve', 'Johnson', 'Man', 'USA', 113);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marton', 'Fucsovics', 'Man', 'HUN', 98);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Geoffrey', 'Blancaneaux', 'Man', 'FRA', 135);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Attila', 'Balazs', 'Man', 'HUN', 724);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marin', 'Cilic', 'Man', 'CRO', 17);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Miomir', 'Kecmanovic', 'Man', 'SRB', 29);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tomas Martin', 'Etcheverry', 'Man', 'ARG', 80);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Arthur', 'Rinderknech', 'Man', 'FRA', 44);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexander', 'Bublik', 'Man', 'KAZ', 37);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ricardas', 'Berankis', 'Man', 'LTU', 168);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Laslo', 'Djere', 'Man', 'SRB', 72);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Facundo', 'Bagnis', 'Man', 'ARG', 93);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daniil', 'Medvedev', 'Man', 'RUS', 7);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tennys', 'Sandgren', 'Man', 'USA', 272);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Salvatore', 'Caruso', 'Man', 'ITA', 302);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Stefano', 'Travaglia', 'Man', 'ITA', 332);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yasutaka', 'Uchiyama', 'Man', 'JPN', 316);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Matteo', 'Berrettini', 'Man', 'ITA', 16);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Feliciano', 'Lopez', 'Man', 'ESP', 825);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kevin', 'Anderson', 'Man', 'RSA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andreas', 'Seppi', 'Man', 'ITA', 358);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mathias', 'Bourgue', 'Man', 'FRA', 410);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Dominik', 'Koepfer', 'Man', 'GER', 198);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Denis', 'Istomin', 'Man', 'UZB', 479);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Roger', 'Federer', 'Man', 'SUI', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pierre-Hugues', 'Herbert', 'Man', 'FRA', 310);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Gianluca', 'Mager', 'Man', 'ITA', 211);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Gael', 'Monfils', 'Man', 'FRA', 52);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yen-hsun', 'Lu', 'Man', 'TPE', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Philipp', 'Kohlschreiber', 'Man', 'GER', 418);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Fernando', 'Verdasco', 'Man', 'ESP', 125);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jan-Lennard', 'Struff', 'Man', 'GER', 152);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Roman', 'Safiullin', 'Man', 'RUS', 89);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kei', 'Nishikori', 'Man', 'JAP', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yannick', 'Hanfmann', 'Man', 'GER', 131);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mario', 'Vilella Martinez', 'Man', 'ESP', 657);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Roberto', 'Bautista Agut', 'Man', 'ESP', 21);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Arthur', 'Cazaux', 'Man', 'FRA', 388);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mikhail', 'Kukushkin', 'Man', 'KAZ', 223);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Radu', 'Albot', 'Man', 'MDA', 103);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jeremy', 'Chardy', 'Man', 'FRA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maximilian', 'Marterer', 'Man', 'GER', 159);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sam', 'Querrey', 'Man', 'USA', 326);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Thiago', 'Monteiro', 'Man', 'BRA', 73);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Egor', 'Gerasimov', 'Man', 'BLR', 279);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Enzo', 'Couacaud', 'Man', 'FRA', 174);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Guido', 'Pella', 'Man', 'ARG', 759);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daniel Elahi', 'Galan', 'Man', 'COL', 69);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrej', 'Martin', 'Man', 'SVK', 330);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alejandro', 'Tabilo', 'Man', 'CHI', 86);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lukas', 'Rosol', 'Man', 'CZE', 213);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tim', 'Van Rijthoven', 'Man', 'NED', 115);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andy', 'Murray', 'Man', 'GBR', 49);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jay', 'Clarke', 'Man', 'GBR', 217);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Christian', 'Harrison', 'Man', 'USA', 333);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrea', 'Vavassori', 'Man', 'ITA', 194);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ran', 'Peniston', 'Man', 'GBR', 144);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Heni', 'Laaksonen', 'Man', 'SUI', 171);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Max', 'Pucell', 'Man', 'AUS', 221);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elias', 'Ymer', 'Man', 'SWE', 130);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marc-Andrea', 'Huesler', 'Man', 'SUI', 58);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Hugo', 'Grenier', 'Man', 'FRA', 142);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexander', 'De Minaur', 'Man', 'AUS', 24);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zizou', 'Bergs', 'Man', 'BEL', 133);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jack', 'Draper', 'Man', 'GBR', 42);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Liam', 'Broady', 'Man', 'GBR', 164);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lukas', 'Klein', 'Man', 'AUT', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Stefan', 'Kozlov', 'Man', 'USA', 196);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Diego', 'Schwartzman', 'Man', 'ARG', 25);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nicola', 'Kuhn', 'Man', 'GER', 503);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Paul', 'Jubb', 'Man', 'GBR', 219);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nick', 'Kyrgios', 'Man', 'AUS', 22);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Roberto', 'Carballes', 'Man', 'ESP', 76);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexander', 'Ritschard', 'Man', 'SUI', 169);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jack', 'Sock', 'Man', 'USA', 132);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Dennis', 'Novak', 'Man', 'AUT', 181);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alastair', 'Gray', 'Man', 'GRB', 274);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Chun Hsin', 'Tseng', 'Man', 'TPE', 88);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tomas', 'Barrios Vera', 'Man', 'CHI', 230);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marc', 'Polmans', 'Man', 'AUS', 335);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marco', 'Cecchinato', 'Man', 'ITA', 105);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Vasek', 'Pospisil', 'Man', 'CAN ', 100);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jay', 'Clarke', 'Man', 'GBR', 217);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zhizhen', 'Zhang', 'Man', 'CHN ', 101);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Antoine', 'Hoang', 'Man', 'FRA ', 365);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Philipp', 'Kohlschrei', 'Man', 'GER', 418);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daniel', 'Masur', 'Man', 'GER', 193);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yuichi', 'Sugita', 'Man', 'JPN ', 1136);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alex', 'Bolt', 'Man', 'AUS', 692);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Pedro', 'Sousa', 'Man', 'POR', 525);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marco', 'Trungelliti', 'Man', 'ARG ', 225);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ben', 'Shelton', 'Man', 'USA ', 97);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yibing', 'Wu', 'Man', 'CHN', 119);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jeffrey John', 'Wolf', 'Man', 'USA', 68);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emilio', 'Nava', 'Man', 'USA', 179);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nicolas', 'Jarry', 'Man', 'CHI', 141);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Brandon', 'Holt', 'Man', 'USA', 216);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tomas', 'Machac', 'Man', 'CZE', 104);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kyle', 'Edmund', 'Man', 'GBR ', 583);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Gijs', 'Brouwer', 'Man', 'NED ', 157);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Christopher', 'Eubanks', 'Man', 'USA ', 124);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Learner', 'Tien', 'Man', 'USA', 857);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rinky', 'Hijikata', 'Man', 'AUS', 166);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zachary', 'Svajda', 'Man', 'USA', 260);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Max', 'Purcell', 'Man', 'AUS ', 221);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ernesto', 'Escobedo', 'Man', 'USA', 227);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Denis', 'Shapocalov', 'Man', 'CAN', 18);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ivo', 'Karlovic', 'Man', 'CRO ', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Evgeny', 'Donskoy', 'Man', 'RUS', 342);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cem', 'Ilkel', 'Man', 'TUR ', 343);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sam', 'Riffice', 'Man', 'USA ', 494);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aleksandar', 'Vukic', 'Man', 'AUS', 140);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nikola', 'Milojevic', 'Man', 'SRB ', 259);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Damir', 'Dzumhur', 'Man', 'BIH', 186);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Timofey', 'Skatov', 'Man', 'KAZ ', 146);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emilio', 'Gomez', 'Man', 'ECU', 114);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Juan Manuel', 'Cerundolo', 'Man', 'ARG', 154);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Milos', 'Raonic', 'Man', 'CAN', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sergiy', 'Stakhovsky', 'Man', 'UKR', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Frederico', 'Ferreira Silva', 'Man', 'POR', 244);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kimmer', 'Coppejans', 'Man', 'BEL ', 199);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Bernard', 'Tomic', 'Man', 'AUS', 508);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cedrik-Marcel', 'Stebe', 'Man', 'GER', 203);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alexandre', 'Muller', 'Man', 'FRA', 160);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrej', 'Martinez', 'Man', 'SVK', 330);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Li', 'Tu', 'Man', 'AUS', 199);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mikael', 'Torpegaard', 'Man', 'DEN', 664);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Robin', 'Haase', 'Man', 'NED', 267);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sumit', 'Nagal', 'Man', 'IND', 502);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Viktor', 'Troicki', 'Man', 'SRB', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Li', 'Tu', 'Man', 'AUS', 199);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mikael', 'Torpegaard', 'Man', 'DEN', 664);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Robin', 'Haase', 'Man', 'NED', 267);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sumit', 'Nagal', 'Man', 'IND', 502);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Viktor', 'Troicki', 'Man', 'SRB', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ashleigh', 'Barty', 'Woman', 'AUS', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Bernarda', 'Pera', 'Woman', 'USA', 44);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Magda', 'Linette', 'Woman', 'POL', 49);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Chloe', 'Paquet', 'Woman', 'FRA', 163);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Irina', 'Bara', 'Woman', 'ROU', 173);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Astra', 'Sharma', 'Woman', 'AUS', 231);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yulia', 'Putintseva', 'Woman', 'KAZ', 51);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ons', 'Jabeur', 'Woman', 'TUN', 2);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cori', 'Gauff', 'Woman', 'USA', 7);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aleksandra', 'Krunic', 'Woman', 'SRB', 109);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Qiang', 'Wang', 'Woman', 'CHN', 92);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Su-Wei', 'Hsieh', 'Woman', 'TPE', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('En-Shuo', 'Liang', 'Woman', 'TPE', 392);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Fiona', 'Ferro', 'Woman', 'FRA ', 413);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anastasija', 'Sevastova', 'Woman', 'LAT', 681);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jennifer', 'Brady', 'Woman', 'USA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Karolina', 'Pliskova', 'Woman', 'CZE', 32);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Donna', 'Vekic', 'Woman', 'CRO', 69);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Carla', 'Suarez Navarro', 'Woman', 'ESP', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sloane', 'Stephens', 'Woman', 'USA', 37);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Varvara', 'Lepchenko', 'Woman', 'USA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Shuai', 'Zhang', 'Woman', 'CHN', 24);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Andrea', 'Petkovic', 'Woman', 'GER', 138);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Karolina', 'Muchova', 'Woman', 'CZE', 153);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ekaterina', 'Alexandrova', 'Woman', 'RUS', 19);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Venus', 'Williams', 'Woman', 'USA ', 1017);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Barbora', 'Krejcikova', 'Woman', 'CZE', 21);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kristyna', 'Pliskova', 'Woman', 'CZE', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ann', 'Li', 'Woman', 'USA', 133);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Margarita', 'Betova', 'Woman', 'RUS', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Oceane', 'Babel', 'Woman', 'FRA', 453);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elina', 'Svitolina', 'Woman', 'UKR', 242);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sofia', 'Kenin', 'Woman', 'USA', 240);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jelena', 'Ostapenko', 'Woman', 'LAT', 18);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Hailey', 'Baptiste', 'Woman', 'USA', 176);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anna', 'Blinkova', 'Woman', 'RUS', 80);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tereza', 'Martincova', 'Woman', 'CZE ', 73);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ivana', 'Jorovic', 'Woman', 'SRB', 496);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lin', 'Zhu', 'Woman', 'CHN', 64);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jessica', 'Pegula', 'Woman', 'USA', 3);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maria', 'Sakkari', 'Woman', 'GRE', 6);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Katarina', 'Zavatska', 'Woman', 'UKR ', 307);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jasmine', 'Paolini', 'Woman', 'ITA ', 62);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Stefanie', 'Voegele', 'Woman', 'SUI', 245);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Heather', 'Watson', 'Woman', 'GBR ', 136);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zarina', 'Diyas', 'Woman', 'KAZ ', 1040);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Storm', 'Sanders', 'Woman', 'AUS', 243);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elise', 'Mertens', 'Woman', 'BEL', 29);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Garbine', 'Muguruza', 'Woman', 'ESP', 56);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marta', 'Kostyuk', 'Woman', 'UKR ', 71);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Saisai', 'Zheng', 'Woman', 'CHN', 396);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sara', 'Sorribes Tormo', 'Woman', 'ESP ', 67);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lara', 'Arruabarrera', 'Woman', 'ESP', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Varvara', 'Gracheva', 'Woman', 'RUS', 95);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Camila', 'Giorgi', 'Woman', 'ITA ', 68);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Petra', 'Martic', 'Woman', 'CRO', 39);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anett', 'Kontaveit', 'Woman', 'EST', 17);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Viktorija', 'Golubic', 'Woman', 'SUI', 76);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anna Karolina', 'Schmiedlova', 'Woman', 'GER', 99);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kristina', 'Mladenovic', 'Woman', 'FRA', 113);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rebecca', 'Peterson', 'Woman', 'SWE', 134);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Shelby', 'Rogers', 'Woman', 'USA', 49);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kaja', 'Juvan', 'Woman', 'SLO', 89);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Iga', 'Swiatek', 'Woman', 'POL ', 1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Serena', 'Williams', 'Woman', 'USA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Irina-Camelia', 'Begu', 'Woman', 'ROU', 34);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Arantxa', 'Rus', 'Woman', 'NED ', 115);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mihaela', 'Buzarnescu', 'Woman', 'ROU', 391);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Danielle', 'Collins', 'Woman', 'USA ', 14);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Xiyu', 'Wang', 'Woman', 'CHN', 51);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anhelina', 'Kalinina', 'Woman', 'UKR ', 53);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Angelique', 'Kerber', 'Woman', 'GER', 102);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elena', 'Rybakina', 'Woman', 'KAZ', 22);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elsa', 'Jacquemot', 'Woman', 'FRA', 208);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nao', 'Hibino', 'Woman', 'JPN ', 139);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nina', 'Stojanovic', 'Woman', 'SRB', 439);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elena', 'Vesnina', 'Woman', 'UKR', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Olga', 'Govortsova', 'Woman', 'BLR', 607);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Greet', 'Minnen', 'Woman', 'BEL', 206);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Petra', 'Kvitova', 'Woman', 'CZE', 16);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Victoria', 'Azarenka', 'Woman', 'BLR', 27);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Svetlana', 'Kuznetsova', 'Woman', 'RUS', 177);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Clara', 'Tauson', 'Woman', 'DEN ', 127);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ekaterine', 'Gorgodze', 'Woman', 'GEO ', 221);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Leylah', 'Fernandez', 'Woman', 'CAN', 40);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anastasia', 'Potapova', 'Woman', 'RUS', 43);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Oceane', 'Dodin', 'Woman', 'FRA', 109);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Madison', 'Keys', 'Woman', 'USA', 11);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anastasia', 'Pavlyuchenkova', 'Woman', 'RUS', 368);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Christina', 'Mchale', 'Woman', 'USA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ajla', 'Tomljanovic', 'Woman', 'AUS', 33);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Diane', 'Parry', 'Woman', 'FRA', 105);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aliaksandra', 'Sasnovich', 'Woman', 'BLR', 31);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ana', 'Konjuh', 'Woman', 'CRO ', 117);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Aryna', 'Sabalenka', 'Woman', 'BLR', 5);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tamara', 'Zidansek', 'Woman', 'SLO ', 86);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Madison', 'Brengle', 'Woman', 'USA', 59);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Camila', 'Osorio', 'Woman', 'COL', 83);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marie', 'Bouzkova', 'Woman', 'CZE', 26);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Katerina', 'Siniakova', 'Woman', 'CZE', 47);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Veronika', 'Kudermetova', 'Woman', 'RUS', 9);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Johanna', 'Kontaveit', 'Woman', 'GBR', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sorana', 'Cirstea', 'Woman', 'ROU', 38);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alison', 'Van Uytvanck', 'Woman', 'BEL', 55);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Martina', 'Trevisan', 'Woman', 'ITA', 28);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daria', 'Kasatkina', 'Woman', 'RUS', 8);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Misaki', 'Doi', 'Woman', 'JPN ', 174);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nadia', 'Podoroska', 'Woman', 'ARG', 193);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Belinda', 'Bencic', 'Woman', 'SUI', 12);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kiki', 'Bertens', 'Woman', 'NED', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Polona', 'Hercog', 'Woman', 'SLO ', 414);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Laura', 'Siegemund', 'Woman', 'GER', 172);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Caroline', 'Garcia', 'Woman', 'FRA', 4);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alizé', 'Cornet', 'Woman', 'FRA', 36);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Harmony', 'Tan', 'Woman', 'FRA', 146);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kaia', 'Kanepi', 'Woman', 'EST', 30);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Marketa', 'Vondrousova', 'Woman', 'CZE', 98);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Paula', 'Badosa', 'Woman', 'ESP', 13);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lauren', 'Davis', 'Woman', 'USA', 88);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Clara', 'Burel', 'Woman', 'FRA', 128);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Danka', 'Kovinic', 'Woman', 'MNE', 57);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elisabetta', 'Cocciaretto', 'Woman', 'ITA', 66);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ana', 'Bogdan', 'Woman', 'ROU', 48);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Patricia Maria', 'Tig', 'Woman', 'ROU', 792);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Naomi', 'Osaka', 'Woman', 'JPN ', 42);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Lesia', 'Tsurenko', 'Woman', 'UKR', 129);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Alison', 'Riske Amritraj', 'Woman', 'USA', 41);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Dayana', 'Yastremska', 'Woman', 'UKR', 101);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Kristina', 'Kucova', 'Woman', 'SVK ', 191);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Liudmila', 'Samsonova', 'Woman', 'RUS', 20);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Simona', 'Halep', 'Woman', 'ROU', 10);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nastasja', 'Schunk', 'Woman', 'GER', 216);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maryna', 'Zanevska', 'Woman', 'BEL', 81);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Qinwen', 'Zheng', 'Woman', 'CHN', 25);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lucia', 'Bronzetti', 'Woman', 'ITA', 58);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mayar', 'Sherif', 'Woman', 'EGY', 50);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Claire', 'Liu', 'Woman', 'USA', 61);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Leolia', 'Jeanjean', 'Woman', 'FRA', 120);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Nuria', 'Parrizas Diaz', 'Woman', 'ESP', 72);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tessah', 'Andrianjafitrimo', 'Woman', 'FRA', 237);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Oksana', 'Selekhmeteva', 'Woman', 'RUS', 179);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kamilla', 'Rakhimova', 'Woman', 'RUS', 93);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anna', 'Kalinskaya', 'Woman', 'RUS', 60);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Taylor', 'Townsend', 'Woman', 'USA', 131);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Katie', 'Volynets', 'Woman', 'USA', 112);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Viktoriya', 'Tomova', 'Woman', 'BUL', 90);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Panna', 'Udvardy', 'Woman', 'HUN', 77);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Fernanda', 'Contreras Gomez', 'Woman', 'MEX', 165);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rebecca', 'Sramkova', 'Woman', 'SVK ', 313);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Harriet', 'Dart', 'Woman', 'GBR', 97);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Valentini', 'Grammatikopoulou', 'Woman', 'GRE', 197);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daria', 'Saville', 'Woman', 'AUS', 54);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anna', 'Bondar', 'Woman', 'HUN', 79);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Magdalena', 'Frech', 'Woman', 'POL', 116);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Xinyu', 'Wang', 'Woman', 'CHN', 87);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Linda', 'Noskova', 'Woman', 'CZE', 91);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emma', 'Raducanu', 'Woman', 'GBR', 75);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Reka-Luca', 'Jani', 'Woman', 'HUN', 110);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ysaline', 'Bonaventure', 'Woman', 'BEL', 96);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mirjam', 'Bjorklund', 'Woman', 'SWE', 157);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Carole', 'Monnet', 'Woman', 'FRA', 225);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Anastasia', 'Gasanova', 'Woman', 'RUS', 185);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elena-Gabriela', 'Ruse', 'Woman', 'ROU ', 102);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rebecca', 'Marino', 'Woman', 'CAN', 65);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alison-Van', 'Uytvanck', 'Woman', 'BEL', 55);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Beatriz', 'Haddad Maia', 'Woman', 'BRA', 15);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Cristina', 'Bucsa', 'Woman', 'ESP', 108);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kaia', 'Kane', 'Woman', 'EST', 30);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Victoria', 'Azarenk', 'Woman', 'BLR', 27);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Olga', 'Danilovic', 'Woman', 'SVK', 155);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Dalma', 'Galfi', 'Woman', 'HUN', 85);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jil', 'Teichmann', 'Woman', 'SUI', 35);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tatjana', 'Mari', 'Woman', 'GER', 70);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jule', 'Niemeier', 'Woman', 'GER', 63);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Timea', 'Babos', 'Woman', 'HUN', 91);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Coco', 'Vandeweghe', 'Woman', 'USA', 125);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yafan', 'Wang', 'Woman', 'CHN', 415);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Kateryna', 'Baindl', 'Woman', 'UKR', 111);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Samantha', 'Murray Sharan', 'Woman', 'GBR', 94);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Vitalia', 'Diatchenko', 'Woman', 'RUS', 114);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Daria', 'Kasatkina', 'Woman', 'RUS', 8);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Bianca', 'Andreescu', 'Woman', 'CAN', 45);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Amanda', 'Anisimova', 'Woman', 'USA', 23);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Tsvetana', 'Pironkova', 'Woman', 'BUL', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Aliona', 'Bolsova', 'Woman', 'ESP', 55);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Ellen', 'Perez', 'Woman', 'AUS', 20);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Francesca', 'Jones', 'Woman', 'GBR', -2);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Kristie', 'Ahn', 'Woman', 'USA', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Mona', 'Barthel', 'Woman', 'GER', 282);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Jodie', 'Burrage', 'Woman', 'GBR', 126);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Katie', 'Swan', 'Woman', 'GBR', 145);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​Vera', 'Zvonareva', 'Woman', 'RUS', 31);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Lesley', 'Pattinama Kerkhove', 'Woman', 'NED', 232);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Samantha', 'Stosur', 'Woman', 'AUS', 114);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Danielle', 'Lao', 'Woman', 'USA', 255);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Katie', 'Boulter', 'Woman', 'GBR', 132);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Monica', 'Niculescu', 'Woman', 'ROU', 48);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jana', 'Fett', 'Woman', 'CRO', 238);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sonay', 'Kartal', 'Woman', 'GBR', 201);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Catherine', 'Harrison', 'Woman', 'USA', 78);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emina', 'Bektas', 'Woman', 'USA', 103);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Laura', 'Pigossi', 'Woman', 'BRA', 118);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Rebeka', 'Masarova', 'Woman', 'ESP', 135);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Louisa', 'Chirico', 'Woman', 'USA', 163);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kirsten', 'Flipkens', 'Woman', 'BEL', 30);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jaimee', 'Fourlis', 'Woman', 'AUS', 167);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yue', 'Yuan', 'Woman', 'CHN', 74);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maja', 'Chwalinska', 'Woman', 'POL', 160);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ylena', 'In-Albon', 'Woman', 'SUI', 141);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yuriko-Lily', 'Miyazaki', 'Woman', 'GBR', 215);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mai', 'Hontama', 'Woman', 'JPN', 205);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Katarzyna', 'Kawa', 'Woman', 'POL', 75);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Zoe', 'Hives', 'Woman', 'AUS', 764);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tatjana', 'Maria', 'Woman', 'GER', 70);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Yanina', 'Wickmayer', 'Woman', 'BEL', 158);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Tamara', 'Korpatsch', 'Woman', 'GER', 82);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Maddison', 'Inglis', 'Woman', 'AUS', 182);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jamie', 'Loeb', 'Woman', 'USA', 234);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Catherine', 'Mcnally', 'Woman', 'USA', 94);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Ashlyn', 'Krueger', 'Woman', 'USA', 167);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Alycia', 'Parks', 'Woman', 'USA', 73);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Emma', 'Navarro', 'Woman', 'USA', 148);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Sara', 'Errani', 'Woman', 'ITA', 106);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('​​Yaroslava', 'Shvedova', 'Woman', 'KAZ', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Peyton', 'Stearns', 'Woman', 'USA', 212);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Linda', 'Fruhvirtova', 'Woman', 'CZE', 78);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Erika', 'Andreeva', 'Woman', 'RUS', 122);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Daria', 'Snigur', 'Woman', 'UKR', 107);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Eleana', 'Yu', 'Woman', 'USA', 653);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elizabeth', 'Mandlik', 'Woman', 'USA', 121);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Viktoria', 'Kuzmova', 'Woman', 'SVK', 85);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Sara', 'Bejlek', 'Woman', 'CZE', 178);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Elina', 'Avanesyan', 'Woman', 'RUS', 137);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Evgeniya', 'Rodina', 'Woman', 'RUS', 446);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Jaqueline', 'Cristian', 'Woman', 'ROU', 149);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Barbora', 'Strycova', 'Woman', 'CZE', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Whitney', 'Osuigwe', 'Woman', 'USA', 192);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Arina', 'Rodionova', 'Woman', 'AUS', 255);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Johanna', 'Konta', 'Woman', 'GBR', -1);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Destanee', 'Aiava', 'Woman', 'AUS', 279);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Kimberly', 'Birrell', 'Woman', 'AUS', 171);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Mayo', 'Hibi', 'Woman', 'JPN', 989);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Valeria', 'Savinykh', 'Woman', 'RUS', 243);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Lizette', 'Cabrera', 'Woman', 'AUS', 174);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Arianne', 'Hartono', 'Woman', 'NED', 153);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Caroline', 'Dolehide', 'Woman', 'USA', 35);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Su Jeong', 'Jang', 'Woman', 'KOR', 107);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Robin', 'Anderson', 'Woman', 'USA', 192);
-INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank) VALUES ('Priscilla', 'Hon', 'Woman', 'AUS', 154);
+
+
+INSERT INTO P16_Player (Player_First_Name, Player_Last_Name, Player_Gender, Player_Nationality, Player_ATP_Rank)
+ VALUES
+ ('Novak', 'Djokovic', 'Man', 'Serbia', 5),
+ ('Yoshihito', 'Nishioka', 'Man', 'Japan', 36),
+ ('Alex', 'MolCanada', 'Man', 'Sloveniavakia', 50),
+ ('Federico', 'Coria', 'Man', 'Argentina', 67),
+ ('Aljaz', 'BeDenmarke', 'Man', 'Slovenia', 345),
+ ('Christopher', 'O''Connell', 'Man', 'Australia', 79),
+ ('Pablo', 'Cuevas', 'Man', 'Uruguay', 245),
+ ('Jenson', 'Brooksby', 'Man', 'United States', 48),
+ ('Grigor', 'Dimitrov', 'Man', 'Bulgaria', 28),
+ ('Marcos', 'Giron', 'Man', 'United States', 61),
+ ('Borna', 'Coric', 'Man', 'Croatia', 26),
+ ('Carlos', 'Taberner', 'Man', 'Spain', 167),
+ ('Daniel', 'Altmaier', 'Man', 'Germany', 77),
+ ('Jaume', 'Munar', 'Man', 'Spain', 57),
+ ('Andrey', 'Kuznetsov', 'Man', 'Russia', 446),
+ ('Diego', 'Schwartzman', 'Man', 'Argentina', 25),
+ ('Felix', 'AuGermany-Aliassime', 'Man', 'Canada', 6),
+ ('Juan Pablo', 'Varillas', 'Man', 'Peru', 107),
+ ('Camilo', 'Ugo CaraBelgiumli', 'Man', 'Argentina', 128),
+ ('Aslan', 'Karatsev', 'Man', 'Russia', 59),
+ ('Alessandro', 'Giannessi', 'Man', 'Italia', 268),
+ ('Borna', 'Gojo', 'Man', 'Croatia', 145),
+ ('Filip', 'Krajinovic', 'Man', 'Serbia', 55),
+ ('Reilly', 'Opelka', 'Man', 'United States', 38),
+ ('Botic', 'Van de Zandschulp', 'Man', 'Netherlands', 35),
+ ('Pavel', 'Kotov', 'Man', 'Russia', 99),
+ ('Fabio', 'Fognini', 'Man', 'Italia', 56),
+ ('Alexei', 'Popyrin', 'Man', 'Australia', 121),
+ ('Stan', 'Wawrinka', 'Man', 'Swiss', 151),
+ ('Corentin', 'Moutet', 'Man', 'France', 51),
+ ('Jordan', 'Thompson', 'Man', 'Australia', 84),
+ ('Rafael', 'Nadal', 'Man', 'Spain', 2),
+ ('Alexander', 'Zverev', 'Man', 'Germany', 12),
+ ('Sebastian', 'Ofner', 'Man', 'Austria', 192),
+ ('DUnited Statesn', 'Lajovic', 'Man', 'Serbia', 102),
+ ('Sebastian', 'Baez', 'Man', 'Argentina', 43),
+ ('Brazilndon', 'Nakashima', 'Man', 'United States', 47),
+ ('Kamil', 'Majchrzak', 'Man', 'Poland', 78),
+ ('Tallon', 'Griekspoor', 'Man', 'Netherlands', 96),
+ ('Alejandro', 'Davidovich Fokina', 'Man', 'Spain', 31),
+ ('John', 'Isner', 'Man', 'United States', 41),
+ ('Quentin', 'Halys', 'Man', 'France', 64),
+ ('Taro', 'Daniel', 'Man', 'Japan', 94),
+ ('Greecegoire', 'Barrere', 'Man', 'France', 90),
+ ('Michael', 'Mmoh', 'Man', 'United States', 110),
+ ('Bernabe', 'Zapata Miralles', 'Man', 'Spain', 74),
+ ('Santiago', 'Rodriguez Taverna', 'Man', 'Argentina', 175),
+ ('Taylor', 'Fritz', 'Man', 'United States', 9),
+ ('Cameron', 'Norwayrie', 'Man', 'United Kingdom', 14),
+ ('Manuel', 'Guinard', 'Man', 'France', 148),
+ ('Jason', 'Kubler', 'Man', 'Australia', 109),
+ ('Denmarkis', 'Kudla', 'Man', 'United States', 108),
+ ('Hugo', 'Dellien', 'Man', 'Bolivia', 117),
+ ('Dominic', 'Thiem', 'Man', 'Austria', 106),
+ ('Nuno', 'Borges', 'Man', 'Portugal', 91),
+ ('Karen', 'Khachanov', 'Man', 'Russia', 20),
+ ('Sebastian', 'Koreanda', 'Man', 'United States', 34),
+ ('John', 'Millman', 'Man', 'Australia', 150),
+ ('Lloyd', 'Harris', 'Man', 'South Africa', 237),
+ ('Richard', 'Gasquet', 'Man', 'France', 70),
+ ('Albert', 'Ramos-Vinolas', 'Man', 'Spain', 39),
+ ('Thanasi', 'Kokkinakis', 'Man', 'Australia', 95),
+ ('Juan Ignacio', 'Londero', 'Man', 'Argentina', 238),
+ ('Carlos', 'Alcaraz', 'Man', 'Spain', 1),
+ ('CasPeru', 'Ruud', 'Man', 'Norway', 3),
+ ('Jo-Wilfried', 'Tsonga', 'Man', 'France', -1),
+ ('Emil', 'Ruusuvuori', 'Man', 'Finland', 40),
+ ('Ugo', 'Humbert', 'Man', 'France', 87),
+ ('Joao', 'SoUnited States', 'Man', 'Portugal', 82),
+ ('CHungary-Hsin', 'Tseng', 'Man', 'Taiwan', 88),
+ ('Peter', 'Gojowczyk', 'Man', 'Germany', 233),
+ ('Lorenzo', 'Sonego', 'Man', 'Italia', 45),
+ ('Francences', 'Tiafoe', 'Man', 'United States', 19),
+ ('Benjamin', 'Bonzi', 'Man', 'France', 60),
+ ('Jiri', 'Lehecka', 'Man', 'Czech Republic', 81),
+ ('David', 'GofFinland', 'Man', 'Belgium', 53),
+ ('Marcos', 'CecChilenato', 'Man', 'Italia', 105),
+ ('Pablo', 'Andujar', 'Man', 'Spain', 123),
+ ('Giulio', 'Zeppieri', 'Man', 'Italia', 162),
+ ('Hubert', 'Hurkacz', 'Man', 'Poland', 10),
+ ('Denmarkis', 'Shapovalov', 'Man', 'Canada', 18),
+ ('HolGermany', 'Rune', 'Man', 'Denmark', 11),
+ ('Pedro', 'Martinez', 'Man', 'Spain', 62),
+ ('Henri', 'Laaksonen', 'Man', 'Swiss', 171),
+ ('Norwaybert', 'Gombos', 'Man', 'Sloveniavakia', 116),
+ ('Pedro', 'CaChilen', 'Man', 'Argentina', 54),
+ ('Hugo', 'Gaston', 'Man', 'France', 111),
+ ('Alex', 'De Minaur', 'Man', 'Australia', 24),
+ ('Daniel', 'Evans', 'Man', 'United Kingdom', 27),
+ ('Francencisco', 'Cerundolo', 'Man', 'Argentina', 30),
+ ('Mikael', 'Ymer', 'Man', 'Sweden', 71),
+ ('James', 'Duckworth', 'Man', 'Australia', 172),
+ ('Lucas', 'Pouille', 'Man', 'France', 386),
+ ('ZDenmarkek', 'Kolar', 'Man', 'Czech Republic', 249),
+ ('Lorenzo', 'Musetti', 'Man', 'Italia', 23),
+ ('Stefanos', 'Tsitsipas', 'Man', 'Greece', 4),
+ ('Andrey', 'Rublev', 'Man', 'Russia', 8),
+ ('Soonwoo', 'Kwon', 'Man', 'Korean', 83),
+ ('Adrian', 'Mannarino', 'Man', 'France', 46),
+ ('Federico', 'Delbonis', 'Man', 'Argentina', 126),
+ ('Benoit', 'Paire', 'Man', 'France', 180),
+ ('Ilya', 'Ivashka', 'Man', 'Belarus', 75),
+ ('Cristian', 'Garin', 'Man', 'Chile', 85),
+ ('Tommy', 'Paul', 'Man', 'United States', 33),
+ ('Nikoloz', 'Basilashvili', 'Man', 'Georgia', 92),
+ ('Maxime', 'Cressy', 'Man', 'United States', 32),
+ ('Mackenzie', 'McDonald', 'Man', 'United States', 63),
+ ('Francenco', 'Agamenone', 'Man', 'Italia', 139),
+ ('Roberto', 'Carballes Baena', 'Man', 'Spain', 76),
+ ('Oscar', 'Otte', 'Man', 'Germany', 65),
+ ('Bjorn', 'Francetangelo', 'Man', 'United States', 313),
+ ('Jannik', 'Sinner', 'Man', 'Italia', 15),
+ ('Pablo', 'Carreno Busta', 'Man', 'Spain', 13),
+ ('Gilles', 'Simon', 'Man', 'France', 143),
+ ('Jiri', 'Vesely', 'Man', 'Czech Republic', 112),
+ ('Steve', 'Johnson', 'Man', 'United States', 113),
+ ('Marton', 'Fucsovics', 'Man', 'Hungary', 98),
+ ('Georgiaffrey', 'BlanCanadaeaux', 'Man', 'France', 135),
+ ('Attila', 'Balazs', 'Man', 'Hungary', 724),
+ ('Marin', 'Cilic', 'Man', 'Croatia', 17),
+ ('Miomir', 'Kecmanovic', 'Man', 'Serbia', 29),
+ ('Tomas Martin', 'Etcheverry', 'Man', 'Argentina', 80),
+ ('Arthur', 'RIndiaerknech', 'Man', 'France', 44),
+ ('Alexander', 'Bublik', 'Man', 'Kazakhstan', 37),
+ ('Ricardas', 'Berankis', 'Man', 'Lithuania', 168),
+ ('LaSlovenia', 'Djere', 'Man', 'Serbia', 72),
+ ('Facundo', 'Bagnis', 'Man', 'Argentina', 93),
+ ('Daniil', 'Medvedev', 'Man', 'Russia', 7),
+ ('Tennys', 'SandGreecen', 'Man', 'United States', 272),
+ ('Salvatore', 'CaRussiao', 'Man', 'Italia', 302),
+ ('Stefano', 'Travaglia', 'Man', 'Italia', 332),
+ ('Yasutaka', 'UChileyama', 'Man', 'Japan', 316),
+ ('Matteo', 'Berrettini', 'Man', 'Italia', 16),
+ ('Feliciano', 'Lopez', 'Man', 'Spain', 825),
+ ('Kevin', 'Anderson', 'Man', 'South Africa', -1),
+ ('Andreas', 'Seppi', 'Man', 'Italia', 358),
+ ('Mathias', 'Bourgue', 'Man', 'France', 410),
+ ('Dominik', 'Koepfer', 'Man', 'Germany', 198),
+ ('Denmarkis', 'Istomin', 'Man', 'Uzbekistan', 479),
+ ('RoGermany', 'Federer', 'Man', 'Swiss', -1),
+ ('Pierre-Hugues', 'Herbert', 'Man', 'France', 310),
+ ('Gianluca', 'MaGermany', 'Man', 'Italia', 211),
+ ('Gael', 'Monfils', 'Man', 'France', 52),
+ ('Yen-hsun', 'Lu', 'Man', 'Taiwan', -1),
+ ('Philipp', 'Kohlschreiber', 'Man', 'Germany', 418),
+ ('Fernando', 'Verdasco', 'Man', 'Spain', 125),
+ ('Jan-Lennard', 'Struff', 'Man', 'Germany', 152),
+ ('Roman', 'Safiullin', 'Man', 'Russia', 89),
+ ('Kei', 'NishiKoreani', 'Man', 'Japan', -1),
+ ('Yannick', 'Hanfmann', 'Man', 'Germany', 131),
+ ('Mario', 'Vilella Martinez', 'Man', 'Spain', 657),
+ ('Roberto', 'BAustriaista Agut', 'Man', 'Spain', 21),
+ ('Arthur', 'Cazaux', 'Man', 'France', 388),
+ ('Mikhail', 'Kukushkin', 'Man', 'Kazakhstan', 223),
+ ('Radu', 'Albot', 'Man', 'Moldova', 103),
+ ('Jeremy', 'Chardy', 'Man', 'France', -1),
+ ('Maximilian', 'Marterer', 'Man', 'Germany', 159),
+ ('Sam', 'Querrey', 'Man', 'United States', 326),
+ ('Thiago', 'Monteiro', 'Man', 'Brazil', 73),
+ ('Egor', 'Germanyasimov', 'Man', 'Belarus', 279),
+ ('Enzo', 'Couacaud', 'Man', 'France', 174),
+ ('Guido', 'Pella', 'Man', 'Argentina', 759),
+ ('Daniel Elahi', 'Galan', 'Man', 'Colombia', 69),
+ ('Andrej', 'Martin', 'Man', 'Sloveniavakia', 330),
+ ('Alejandro', 'Tabilo', 'Man', 'Chile', 86),
+ ('Lukas', 'Rosol', 'Man', 'Czech Republic', 213),
+ ('Tim', 'Van Rijthoven', 'Man', 'Netherlands', 115),
+ ('Andy', 'Murray', 'Man', 'United Kingdom', 49),
+ ('Jay', 'Clarke', 'Man', 'United Kingdom', 217),
+ ('Christian', 'Harrison', 'Man', 'United States', 333),
+ ('Andrea', 'Vavassori', 'Man', 'Italia', 194),
+ ('Ran', 'Peniston', 'Man', 'United Kingdom', 144),
+ ('Heni', 'Laaksonen', 'Man', 'Swiss', 171),
+ ('Max', 'Pucell', 'Man', 'Australia', 221),
+ ('Elias', 'Ymer', 'Man', 'Sweden', 130),
+ ('Marc-Andrea', 'Huesler', 'Man', 'Swiss', 58),
+ ('Hugo', 'Greecenier', 'Man', 'France', 142),
+ ('Alexander', 'De Minaur', 'Man', 'Australia', 24),
+ ('Zizou', 'Bergs', 'Man', 'Belgium', 133),
+ ('Jack', 'DraPeru', 'Man', 'United Kingdom', 42),
+ ('Liam', 'Broady', 'Man', 'United Kingdom', 164),
+ ('Lukas', 'Klein', 'Man', 'Austria', -1),
+ ('Stefan', 'Kozlov', 'Man', 'United States', 196),
+ ('Diego', 'Schwartzman', 'Man', 'Argentina', 25),
+ ('NiColombiaa', 'Kuhn', 'Man', 'Germany', 503),
+ ('Paul', 'Jubb', 'Man', 'United Kingdom', 219),
+ ('Nick', 'Kyrgios', 'Man', 'Australia', 22),
+ ('Roberto', 'Carballes', 'Man', 'Spain', 76),
+ ('Alexander', 'Ritschard', 'Man', 'Swiss', 169),
+ ('Jack', 'Sock', 'Man', 'United States', 132),
+ ('Denmarknis', 'Novak', 'Man', 'Austria', 181),
+ ('Alastair', 'Gray', 'Man', 'United Kingdom', 274),
+ ('CHungary Hsin', 'Tseng', 'Man', 'Taiwan', 88),
+ ('Tomas', 'Barrios Vera', 'Man', 'Chile', 230),
+ ('Marc', 'Polandmans', 'Man', 'Australia', 335),
+ ('Marco', 'CecChilenato', 'Man', 'Italia', 105),
+ ('Vasek', 'Pospisil', 'Man', 'Canada ', 100),
+ ('Jay', 'Clarke', 'Man', 'United Kingdom', 217),
+ ('Zhizhen', 'Zhang', 'Man', 'China ', 101),
+ ('Antoine', 'Hoang', 'Man', 'France ', 365),
+ ('Philipp', 'Kohlschrei', 'Man', 'Germany', 418),
+ ('Daniel', 'Masur', 'Man', 'Germany', 193),
+ ('YuiChile', 'SugItalia', 'Man', 'Japan ', 1136),
+ ('Alex', 'Boliviat', 'Man', 'Australia', 692),
+ ('Pedro', 'SoUnited States', 'Man', 'Portugal', 525),
+ ('Marco', 'Trungelliti', 'Man', 'Argentina ', 225),
+ ('Ben', 'Shelton', 'Man', 'United States ', 97),
+ ('Yibing', 'Wu', 'Man', 'China', 119),
+ ('Jeffrey John', 'Wolf', 'Man', 'United States', 68),
+ ('Emilio', 'Nava', 'Man', 'United States', 179),
+ ('NiColombiaas', 'Jarry', 'Man', 'Chile', 141),
+ ('Brazilndon', 'Holt', 'Man', 'United States', 216),
+ ('Tomas', 'Machac', 'Man', 'Czech Republic', 104),
+ ('Kyle', 'Edmund', 'Man', 'United Kingdom ', 583),
+ ('Gijs', 'BRomaniawer', 'Man', 'Netherlands ', 157),
+ ('Christopher', 'Eubanks', 'Man', 'United States ', 124),
+ ('Learner', 'Tien', 'Man', 'United States', 857),
+ ('Rinky', 'Hijikata', 'Man', 'Australia', 166),
+ ('Zachary', 'Svajda', 'Man', 'United States', 260),
+ ('Max', 'Purcell', 'Man', 'Australia ', 221),
+ ('ErnEstoniao', 'Escobedo', 'Man', 'United States', 227),
+ ('Denmarkis', 'Shapocalov', 'Man', 'Canada', 18),
+ ('Ivo', 'Karlovic', 'Man', 'Croatia ', -1),
+ ('Evgeny', 'Donskoy', 'Man', 'Russia', 342),
+ ('Cem', 'Ilkel', 'Man', 'Turkey ', 343),
+ ('Sam', 'Riffice', 'Man', 'United States ', 494),
+ ('Aleksandar', 'Vukic', 'Man', 'Australia', 140),
+ ('Nikola', 'Milojevic', 'Man', 'Serbia ', 259),
+ ('Damir', 'Dzumhur', 'Man', 'Bosnia and Herzegovina', 186),
+ ('Timofey', 'Skatov', 'Man', 'Kazakhstan ', 146),
+ ('Emilio', 'Gomez', 'Man', 'Ecuador', 114),
+ ('Juan Manuel', 'Cerundolo', 'Man', 'Argentina', 154),
+ ('Milos', 'Raonic', 'Man', 'Canada', -1),
+ ('Sergiy', 'Stakhovsky', 'Man', 'Ukraine', -1),
+ ('Frederico', 'Ferreira Silva', 'Man', 'Portugal', 244),
+ ('Kimmer', 'Coppejans', 'Man', 'Belgium ', 199),
+ ('Bernard', 'Tomic', 'Man', 'Australia', 508),
+ ('Cedrik-Marcel', 'Stebe', 'Man', 'Germany', 203),
+ ('Alexandre', 'Muller', 'Man', 'France', 160),
+ ('Andrej', 'Martinez', 'Man', 'Sloveniavakia', 330),
+ ('Li', 'Tu', 'Man', 'Australia', 199),
+ ('Mikael', 'Torpegaard', 'Man', 'Denmark', 664),
+ ('Robin', 'Haase', 'Man', 'Netherlands', 267),
+ ('Sumit', 'Nagal', 'Man', 'India', 502),
+ ('Viktor', 'Troicki', 'Man', 'Serbia', -1),
+ ('Li', 'Tu', 'Man', 'Australia', 199),
+ ('Mikael', 'Torpegaard', 'Man', 'Denmark', 664),
+ ('Robin', 'Haase', 'Man', 'Netherlands', 267),
+ ('Sumit', 'Nagal', 'Man', 'India', 502),
+ ('Viktor', 'Troicki', 'Man', 'Serbia', -1),
+ ('Ashleigh', 'Barty', 'Woman', 'Australia', -1),
+ ('Bernarda', 'Perua', 'Woman', 'United States', 44),
+ ('Magda', 'Linette', 'Woman', 'Poland', 49),
+ ('Chloe', 'Paquet', 'Woman', 'France', 163),
+ ('Irina', 'Bara', 'Woman', 'Romania', 173),
+ ('Astra', 'Sharma', 'Woman', 'Australia', 231),
+ ('Yulia', 'Putintseva', 'Woman', 'Kazakhstan', 51),
+ ('Ons', 'Jabeur', 'Woman', 'Tunisia', 2),
+ ('Cori', 'Gauff', 'Woman', 'United States', 7),
+ ('Aleksandra', 'Krunic', 'Woman', 'Serbia', 109),
+ ('Qiang', 'Wang', 'Woman', 'China', 92),
+ ('Su-Wei', 'Hsieh', 'Woman', 'Taiwan', -1),
+ ('En-Shuo', 'Liang', 'Woman', 'Taiwan', 392),
+ ('Fiona', 'Ferro', 'Woman', 'France ', 413),
+ ('Anastasija', 'Sevastova', 'Woman', 'Latvia', 681),
+ ('Jennifer', 'Brazildy', 'Woman', 'United States', -1),
+ ('Karolina', 'Pliskova', 'Woman', 'Czech Republic', 32),
+ ('Donna', 'Vekic', 'Woman', 'Croatia', 69),
+ ('Carla', 'Suarez Navarro', 'Woman', 'Spain', -1),
+ ('Sloveniaane', 'Stephens', 'Woman', 'United States', 37),
+ ('Varvara', 'Lepchenko', 'Woman', 'United States', -1),
+ ('Shuai', 'Zhang', 'Woman', 'China', 24),
+ ('Andrea', 'Petkovic', 'Woman', 'Germany', 138),
+ ('Karolina', 'Muchova', 'Woman', 'Czech Republic', 153),
+ ('Ekaterina', 'Alexandrova', 'Woman', 'Russia', 19),
+ ('Venus', 'Williams', 'Woman', 'United States ', 1017),
+ ('Barbora', 'Krejcikova', 'Woman', 'Czech Republic', 21),
+ ('Kristyna', 'Pliskova', 'Woman', 'Czech Republic', -1),
+ ('Ann', 'Li', 'Woman', 'United States', 133),
+ ('MArgentinaarItalia', 'Betova', 'Woman', 'Russia', -1),
+ ('Oceane', 'BaBelgium', 'Woman', 'France', 453),
+ ('Elina', 'Svitolina', 'Woman', 'Ukraine', 242),
+ ('Sofia', 'Kenin', 'Woman', 'United States', 240),
+ ('Jelena', 'Ostapenko', 'Woman', 'Latvia', 18),
+ ('Hailey', 'Baptiste', 'Woman', 'United States', 176),
+ ('Anna', 'Blinkova', 'Woman', 'Russia', 80),
+ ('Tereza', 'Martincova', 'Woman', 'Czech Republic ', 73),
+ ('Ivana', 'Jorovic', 'Woman', 'Serbia', 496),
+ ('Lin', 'Zhu', 'Woman', 'China', 64),
+ ('Jessica', 'Pegula', 'Woman', 'United States', 3),
+ ('Maria', 'Sakkari', 'Woman', 'Greece', 6),
+ ('Katarina', 'Zavatska', 'Woman', 'Ukraine ', 307),
+ ('Jasmine', 'Paolini', 'Woman', 'Italia ', 62),
+ ('Stefanie', 'Voegele', 'Woman', 'Swiss', 245),
+ ('Heather', 'Watson', 'Woman', 'United Kingdom ', 136),
+ ('Zarina', 'Diyas', 'Woman', 'Kazakhstan ', 1040),
+ ('Storm', 'Sanders', 'Woman', 'Australia', 243),
+ ('Elise', 'Mertens', 'Woman', 'Belgium', 29),
+ ('Garbine', 'MugUruguayza', 'Woman', 'Spain', 56),
+ ('Marta', 'Kostyuk', 'Woman', 'Ukraine ', 71),
+ ('Saisai', 'Zheng', 'Woman', 'China', 396),
+ ('Sara', 'Sorribes Tormo', 'Woman', 'Spain ', 67),
+ ('Lara', 'Arruabarrera', 'Woman', 'Spain', -1),
+ ('Varvara', 'Gracheva', 'Woman', 'Russia', 95),
+ ('Camila', 'Giorgi', 'Woman', 'Italia ', 68),
+ ('Petra', 'Martic', 'Woman', 'Croatia', 39),
+ ('Anett', 'Kontaveit', 'Woman', 'Estonia', 17),
+ ('Viktorija', 'Golubic', 'Woman', 'Swiss', 76),
+ ('Anna Karolina', 'Schmiedlova', 'Woman', 'Germany', 99),
+ ('Kristina', 'MlaDenmarkovic', 'Woman', 'France', 113),
+ ('Rebecca', 'Peterson', 'Woman', 'Sweden', 134),
+ ('Shelby', 'RoGermanys', 'Woman', 'United States', 49),
+ ('Kaja', 'Juvan', 'Woman', 'Slovenia', 89),
+ ('Iga', 'Swiatek', 'Woman', 'Poland ', 1),
+ ('Serena', 'Williams', 'Woman', 'United States', -1),
+ ('Irina-Camelia', 'Begu', 'Woman', 'Romania', 34),
+ ('Arantxa', 'Russia', 'Woman', 'Netherlands ', 115),
+ ('Mihaela', 'Buzarnescu', 'Woman', 'Romania', 391),
+ ('Danielle', 'Colombialins', 'Woman', 'United States ', 14),
+ ('Xiyu', 'Wang', 'Woman', 'China', 51),
+ ('Anhelina', 'Kalinina', 'Woman', 'Ukraine ', 53),
+ ('Angelique', 'Kerber', 'Woman', 'Germany', 102),
+ ('Elena', 'Rybakina', 'Woman', 'Kazakhstan', 22),
+ ('Elsa', 'Jacquemot', 'Woman', 'France', 208),
+ ('Nao', 'Hibino', 'Woman', 'Japan ', 139),
+ ('Nina', 'Stojanovic', 'Woman', 'Serbia', 439),
+ ('Elena', 'Vesnina', 'Woman', 'Ukraine', -1),
+ ('Olga', 'Govortsova', 'Woman', 'Belarus', 607),
+ ('Greeceet', 'Minnen', 'Woman', 'Belgium', 206),
+ ('Petra', 'Kvitova', 'Woman', 'Czech Republic', 16),
+ ('Victoria', 'Azarenka', 'Woman', 'Belarus', 27),
+ ('Svetlana', 'Kuznetsova', 'Woman', 'Russia', 177),
+ ('Clara', 'TAustraliaon', 'Woman', 'Denmark ', 127),
+ ('Ekaterine', 'Gorgodze', 'Woman', 'Georgia ', 221),
+ ('Leylah', 'Fernandez', 'Woman', 'Canada', 40),
+ ('Anastasia', 'Potapova', 'Woman', 'Russia', 43),
+ ('Oceane', 'Dodin', 'Woman', 'France', 109),
+ ('Madison', 'Keys', 'Woman', 'United States', 11),
+ ('Anastasia', 'Pavlyuchenkova', 'Woman', 'Russia', 368),
+ ('Christina', 'Mchale', 'Woman', 'United States', -1),
+ ('Ajla', 'Tomljanovic', 'Woman', 'Australia', 33),
+ ('Diane', 'Parry', 'Woman', 'France', 105),
+ ('Aliaksandra', 'Sasnovich', 'Woman', 'Belarus', 31),
+ ('Ana', 'Konjuh', 'Woman', 'Croatia ', 117),
+ ('Aryna', 'Sabalenka', 'Woman', 'Belarus', 5),
+ ('Tamara', 'Zidansek', 'Woman', 'Slovenia ', 86),
+ ('Madison', 'Brengle', 'Woman', 'United States', 59),
+ ('Camila', 'Osorio', 'Woman', 'Colombia', 83),
+ ('Marie', 'Bouzkova', 'Woman', 'Czech Republic', 26),
+ ('Katerina', 'Siniakova', 'Woman', 'Czech Republic', 47),
+ ('Veronika', 'Kudermetova', 'Woman', 'Russia', 9),
+ ('Johanna', 'Kontaveit', 'Woman', 'United Kingdom', -1),
+ ('Sorana', 'Cirstea', 'Woman', 'Romania', 38),
+ ('Alison', 'Van Uytvanck', 'Woman', 'Belgium', 55),
+ ('Martina', 'Trevisan', 'Woman', 'Italia', 28),
+ ('Daria', 'Kasatkina', 'Woman', 'Russia', 8),
+ ('Misaki', 'Doi', 'Woman', 'Japan ', 174),
+ ('Nadia', 'Podoroska', 'Woman', 'Argentina', 193),
+ ('BelgiumIndiaa', 'Bencic', 'Woman', 'Swiss', 12),
+ ('Kiki', 'Bertens', 'Woman', 'Netherlands', -1),
+ ('Polandona', 'Hercog', 'Woman', 'Slovenia ', 414),
+ ('Laura', 'Siegemund', 'Woman', 'Germany', 172),
+ ('Caroline', 'Garcia', 'Woman', 'France', 4),
+ ('Alizé', 'Cornet', 'Woman', 'France', 36),
+ ('Harmony', 'Tan', 'Woman', 'France', 146),
+ ('Kaia', 'Kanepi', 'Woman', 'Estonia', 30),
+ ('Marketa', 'VondRomaniasova', 'Woman', 'Czech Republic', 98),
+ ('Paula', 'Badosa', 'Woman', 'Spain', 13),
+ ('Lauren', 'Davis', 'Woman', 'United States', 88),
+ ('Clara', 'Burel', 'Woman', 'France', 128),
+ ('Danka', 'Kovinic', 'Woman', 'Montenegro', 57),
+ ('Elisabetta', 'Cocciaretto', 'Woman', 'Italia', 66),
+ ('Ana', 'Bogdan', 'Woman', 'Romania', 48),
+ ('Patricia Maria', 'Tig', 'Woman', 'Romania', 792),
+ ('Naomi', 'Osaka', 'Woman', 'Japan ', 42),
+ ('Lesia', 'Tsurenko', 'Woman', 'Ukraine', 129),
+ ('Alison', 'Riske Amritraj', 'Woman', 'United States', 41),
+ ('Dayana', 'Yastremska', 'Woman', 'Ukraine', 101),
+ ('Kristina', 'Kucova', 'Woman', 'Sloveniavakia ', 191),
+ ('Liudmila', 'Samsonova', 'Woman', 'Russia', 20),
+ ('Simona', 'Halep', 'Woman', 'Romania', 10),
+ ('Nastasja', 'ScHungaryk', 'Woman', 'Germany', 216),
+ ('Maryna', 'Zanevska', 'Woman', 'Belgium', 81),
+ ('Qinwen', 'Zheng', 'Woman', 'China', 25),
+ ('Lucia', 'Bronzetti', 'Woman', 'Italia', 58),
+ ('Mayar', 'Sherif', 'Woman', 'Egypt', 50),
+ ('Claire', 'Liu', 'Woman', 'United States', 61),
+ ('Leolia', 'Jeanjean', 'Woman', 'France', 120),
+ ('Nuria', 'Parrizas Diaz', 'Woman', 'Spain', 72),
+ ('Tessah', 'Andrianjafitrimo', 'Woman', 'France', 237),
+ ('Oksana', 'Selekhmeteva', 'Woman', 'Russia', 179),
+ ('Kamilla', 'Rakhimova', 'Woman', 'Russia', 93),
+ ('Anna', 'Kalinskaya', 'Woman', 'Russia', 60),
+ ('Taylor', 'Townsend', 'Woman', 'United States', 131),
+ ('Katie', 'Volynets', 'Woman', 'United States', 112),
+ ('Viktoriya', 'Tomova', 'Woman', 'Bulgaria', 90),
+ ('Panna', 'Udvardy', 'Woman', 'Hungary', 77),
+ ('Fernanda', 'Contreras Gomez', 'Woman', 'Mexico', 165),
+ ('Rebecca', 'Sramkova', 'Woman', 'Sloveniavakia ', 313),
+ ('Harriet', 'Dart', 'Woman', 'United Kingdom', 97),
+ ('Valentini', 'Grammatikopoulou', 'Woman', 'Greece', 197),
+ ('Daria', 'Saville', 'Woman', 'Australia', 54),
+ ('Anna', 'Bondar', 'Woman', 'Hungary', 79),
+ ('Magdalena', 'Frech', 'Woman', 'Poland', 116),
+ ('Xinyu', 'Wang', 'Woman', 'China', 87),
+ ('LIndiaa', 'Noskova', 'Woman', 'Czech Republic', 91),
+ ('Emma', 'RaduCanadau', 'Woman', 'United Kingdom', 75),
+ ('Reka-Luca', 'Jani', 'Woman', 'Hungary', 110),
+ ('Ysaline', 'BonavenTurkeye', 'Woman', 'Belgium', 96),
+ ('Mirjam', 'Bjorklund', 'Woman', 'Sweden', 157),
+ ('Carole', 'Monnet', 'Woman', 'France', 225),
+ ('Anastasia', 'Gasanova', 'Woman', 'Russia', 185),
+ ('Elena-Gabriela', 'Russiae', 'Woman', 'Romania ', 102),
+ ('Rebecca', 'Marino', 'Woman', 'Canada', 65),
+ ('Alison-Van', 'Uytvanck', 'Woman', 'Belgium', 55),
+ ('Beatriz', 'Haddad Maia', 'Woman', 'Brazil', 15),
+ ('Cristina', 'Bucsa', 'Woman', 'Spain', 108),
+ ('Kaia', 'Kane', 'Woman', 'Estonia', 30),
+ ('Victoria', 'Azarenk', 'Woman', 'Belarus', 27),
+ ('Olga', 'Danilovic', 'Woman', 'Sloveniavakia', 155),
+ ('Dalma', 'Galfi', 'Woman', 'Hungary', 85),
+ ('Jil', 'Teichmann', 'Woman', 'Swiss', 35),
+ ('Tatjana', 'Mari', 'Woman', 'Germany', 70),
+ ('Jule', 'Niemeier', 'Woman', 'Germany', 63),
+ ('Timea', 'Babos', 'Woman', 'Hungary', 91),
+ ('Coco', 'Vandeweghe', 'Woman', 'United States', 125),
+ ('Yafan', 'Wang', 'Woman', 'China', 415),
+ ('Kateryna', 'BaIndial', 'Woman', 'Ukraine', 111),
+ ('Samantha', 'Murray Sharan', 'Woman', 'United Kingdom', 94),
+ ('VItalialia', 'Diatchenko', 'Woman', 'Russia', 114),
+ ('Bianca', 'Andreescu', 'Woman', 'Canada', 45),
+ ('Amanda', 'Anisimova', 'Woman', 'United States', 23),
+ ('Tsvetana', 'Pironkova', 'Woman', 'Bulgaria', -1),
+ ('Aliona', 'Boliviasova', 'Woman', 'Spain', 55),
+ ('Ellen', 'Peruez', 'Woman', 'Australia', 20),
+ ('Francencesca', 'Jones', 'Woman', 'United Kingdom', -2),
+ ('Kristie', 'Ahn', 'Woman', 'United States', -1),
+ ('Mona', 'Barthel', 'Woman', 'Germany', 282),
+ ('Jodie', 'Burrage', 'Woman', 'United Kingdom', 126),
+ ('Katie', 'Swan', 'Woman', 'United Kingdom', 145),
+ ('Vera', 'Zvonareva', 'Woman', 'Russia', 31),
+ ('Lesley', 'Pattinama Kerkhove', 'Woman', 'Netherlands', 232),
+ ('Samantha', 'Stosur', 'Woman', 'Australia', 114),
+ ('Danielle', 'Lao', 'Woman', 'United States', 255),
+ ('Katie', 'Boulter', 'Woman', 'United Kingdom', 132),
+ ('Monica', 'Niculescu', 'Woman', 'Romania', 48),
+ ('Jana', 'Fett', 'Woman', 'Croatia', 238),
+ ('Sonay', 'Kartal', 'Woman', 'United Kingdom', 201),
+ ('Catherine', 'Harrison', 'Woman', 'United States', 78),
+ ('Emina', 'Bektas', 'Woman', 'United States', 103),
+ ('Laura', 'Pigossi', 'Woman', 'Brazil', 118),
+ ('Rebeka', 'Masarova', 'Woman', 'Spain', 135),
+ ('Louisa', 'Chilerico', 'Woman', 'United States', 163),
+ ('Kirsten', 'Flipkens', 'Woman', 'Belgium', 30),
+ ('Jaimee', 'Fourlis', 'Woman', 'Australia', 167),
+ ('Yue', 'Yuan', 'Woman', 'China', 74),
+ ('Maja', 'Chwalinska', 'Woman', 'Poland', 160),
+ ('Ylena', 'In-Albon', 'Woman', 'Swiss', 141),
+ ('Yuriko-Lily', 'Miyazaki', 'Woman', 'United Kingdom', 215),
+ ('Mai', 'Hontama', 'Woman', 'Japan', 205),
+ ('Katarzyna', 'Kawa', 'Woman', 'Poland', 75),
+ ('Zoe', 'Hives', 'Woman', 'Australia', 764),
+ ('Tatjana', 'Maria', 'Woman', 'Germany', 70),
+ ('Yanina', 'Wickmayer', 'Woman', 'Belgium', 158),
+ ('Tamara', 'Koreanpatsch', 'Woman', 'Germany', 82),
+ ('Maddison', 'Inglis', 'Woman', 'Australia', 182),
+ ('Jamie', 'Loeb', 'Woman', 'United States', 234),
+ ('Catherine', 'Mcnally', 'Woman', 'United States', 94),
+ ('Ashlyn', 'KrueGermany', 'Woman', 'United States', 167),
+ ('Alycia', 'Parks', 'Woman', 'United States', 73),
+ ('Emma', 'Navarro', 'Woman', 'United States', 148),
+ ('Sara', 'Errani', 'Woman', 'Italia', 106),
+ ('Yaroslava', 'Shvedova', 'Woman', 'Kazakhstan', -1),
+ ('Peyton', 'Stearns', 'Woman', 'United States', 212),
+ ('LIndiaa', 'Fruhvirtova', 'Woman', 'Czech Republic', 78),
+ ('Erika', 'Andreeva', 'Woman', 'Russia', 122),
+ ('Daria', 'Snigur', 'Woman', 'Ukraine', 107),
+ ('Eleana', 'Yu', 'Woman', 'United States', 653),
+ ('Elizabeth', 'Mandlik', 'Woman', 'United States', 121),
+ ('Viktoria', 'Kuzmova', 'Woman', 'Sloveniavakia', 85),
+ ('Sara', 'Bejlek', 'Woman', 'Czech Republic', 178),
+ ('Elina', 'Avanesyan', 'Woman', 'Russia', 137),
+ ('Evgeniya', 'Rodina', 'Woman', 'Russia', 446),
+ ('Jaqueline', 'Cristian', 'Woman', 'Romania', 149),
+ ('Barbora', 'Strycova', 'Woman', 'Czech Republic', -1),
+ ('Whitney', 'OSwissgwe', 'Woman', 'United States', 192),
+ ('Arina', 'Rodionova', 'Woman', 'Australia', 255),
+ ('Johanna', 'Konta', 'Woman', 'United Kingdom', -1),
+ ('DEstoniaanee', 'Aiava', 'Woman', 'Australia', 279),
+ ('Kimberly', 'Birrell', 'Woman', 'Australia', 171),
+ ('Mayo', 'Hibi', 'Woman', 'Japan', 989),
+ ('Valeria', 'Savinykh', 'Woman', 'Russia', 243),
+ ('Lizette', 'Cabrera', 'Woman', 'Australia', 174),
+ ('Arianne', 'Hartono', 'Woman', 'Netherlands', 153),
+ ('Caroline', 'Dolehide', 'Woman', 'United States', 35),
+ ('Su Jeong', 'Jang', 'Woman', 'Korean', 107),
+ ('Robin', 'Anderson', 'Woman', 'United States', 192),
+ ('Priscilla', 'Hon', 'Woman', 'Australia', 154);

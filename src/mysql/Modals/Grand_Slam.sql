@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS Grand_Slam;
+DROP TABLE IF EXISTS P16_Grand_Slam;
 
 
-CREATE TABLE IF NOT EXISTS Grand_Slam(
+CREATE TABLE IF NOT EXISTS P16_Grand_Slam(
     GC_ID INT PRIMARY KEY AUTO_INCREMENT,
     GC_Name VARCHAR(32) NOT NULL CHECK (GC_Name IN ("Australian Open","Roland Garros","Wimbledon", "US Open")),
     GC_Location VARCHAR(32) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Grand_Slam(
 
 
 
-INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Roland Garros', 'Paris', 'Clay', 1891);
-INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Wimbledon', 'London', 'Grass', 1877);
-INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'US Open', 'New York City', 'Hard', 1881);
-INSERT INTO Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Australian Open', 'Melbourne', 'Hard', 1905);  
+INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Roland Garros', 'Paris', 'Clay', 1891);
+INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Wimbledon', 'London', 'Grass', 1877);
+INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'US Open', 'New York City', 'Hard', 1881);
+INSERT INTO P16_Grand_Slam ( GC_Name, GC_Location, GC_Ground, GC_Creation) VALUES ( 'Australian Open', 'Melbourne', 'Hard', 1905);  

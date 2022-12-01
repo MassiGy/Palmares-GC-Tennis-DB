@@ -2,8 +2,8 @@
 -- USE PalmaresGCTennis_Postgresql;
 -- STATUS;
 
-\i ./Modals/Grand_Slam.sql;
-\i ./Modals/Player.sql;
-\i ./Modals/Participate.sql;
+\i ./Modals/P16_Grand_Slam.sql;
+\i ./Modals/P16_Player.sql;
+\i ./Modals/P16_Participate.sql;
 
 \dt;

@@ -83,38 +83,43 @@ OR result NOT LIKE "1/8%" ;
 
 
 
+-- GET ALL INFOS ABOUT THE GRAND_SLAM WHICH HAD A WOMEN & A
+-- MAN CHAMPIONS FROM THE SAME NATION.
 
-
-
--- FIRST, CONSTRUCT A LIST OF ALL MEN PLAYERS AND WOMEN PLAYERS 
--- THAT SHARES THE SAME NATIONNALITY
--- PS/ WE JUST NEED TO RETURN THE MEN PLAYER_IDS OR THE WOMEN PLAYER_IDS
--- SINCE THE MAIN REQUEST DOES NOT NEED TO SHOW THE DIFFRENCE GENDER-WISE
--- AND ALSO, CUZ THEY ARE PARTICIPATING AT THE SAME GC_ID, 
--- (OTHERWISE THEY WILL BE IGNORED AT THE SECOND STEP)
-
--- SECOND, FROM THIS LIST SELECT ALL THE PLAYER_ID WHERE 
--- RESULT IS CHAMPION AND RETURN THE EQUIVALENT GC_ID
-
-
--- THIRD, USING THIS RETURNED GC_ID, GET ALL DETAILS ABOUT THE GRAND_SLAM
--- ITSELF.
 
 SELECT *        
 FROM P16_Grand_Slam
 WHERE GC_ID IN (
-    SELECT P16_Participate.GC_ID
-    FROM P16_Participate
-    WHERE P16_Participate.result LIKE "C%"
-    AND P16_Participate.Player_ID IN (
-
-        SELECT fst.Player_ID
+        -- SELECT TWO GROUPS OF PLAYERS THAT SHARE THE SAME NATION
+        SELECT fst_gc.GC_ID
         FROM P16_Player AS fst
         INNER JOIN P16_Player AS snd
-        ON fst.player_nationality = snd.player_nationality 
+        ON fst.player_nationality = snd.player_nationality
+
+        -- FOREACH PLAYER OF EACH GROUP 
+        -- FIND ITS PARTICIPATION RECORDS
+        INNER JOIN P16_Participate AS fst_participation
+        ON fst_participation.Player_ID = fst.Player_ID
+        INNER JOIN P16_Participate AS snd_participation
+        ON snd_participation.Player_ID = snd.Player_ID
+
+        -- FOR EACH PLAYER OF EACH GROUP
+        -- FIND WHICH GRAND_SLAM IN WHICH HE PARTICIPATED
+        INNER JOIN P16_Grand_Slam AS fst_gc
+        ON fst_gc.GC_ID = fst_participation.GC_ID
+        INNER JOIN P16_Grand_Slam AS snd_gc
+        ON snd_gc.GC_ID = snd_participation.GC_ID
+
+        -- FROM THE FIRST GROUP, SELECT ALL THE MEN
         WHERE fst.player_gender LIKE "M%"
+        -- FROM THE FIRST GROUP, SELECT ALL THE WOMEN
         AND snd.player_gender LIKE "W%"
-    )
+        -- FROM THE FIRST GROUP, SELECT ALL THE CHAMPIONS
+        AND fst_participation.result LIKE "C%"
+        -- FROM THE SECOND GROUP, SELECT ALL THE CHAMPIONS
+        AND snd_participation.result LIKE "C%"
+        -- FROM BOTH GROUPS SELECT THE PAIRS THAT BEEN ON THE SAME GRAND_SLAM
+        AND fst_gc.GC_ID = snd_gc.GC_ID
 );
 
 
@@ -149,7 +154,7 @@ WHERE P16_Participate.Player_ID IN (
 
 
 
--- GET THE RESULT OF ALL THE CANADIAN PLAYERS
+-- GET THE RANK OF ALL THE CANADIAN PLAYERS
 
 SELECT * 
 FROM P16_Player
@@ -164,6 +169,16 @@ SELECT *
 FROM P16_Player 
 WHERE Player_Nationality 
 LIKE "CAN%" ;
+
+
+-- GET THE RESULT OF ALL THE CANADIAN PLAYERS
+
+SELECT * 
+FROM P16_Player
+INNER JOIN P16_Participate
+ON P16_Player.Player_ID = P16_Participate.Player_ID
+WHERE P16_Player.Player_Nationality LIKE "CAN%";
+
 
 
 
@@ -187,11 +202,14 @@ WHERE Player_Nationality = "nation_name";
 
 -- GET ALL THE PLAYERS THAT GOT THEMSELVES AT LEAST TWO TIMES THROUGH THE FINAL
 
+-- SELECT PLAYER DATA
 SELECT DISTINCT P16_Player.player_first_name, P16_Player.player_last_name 
 FROM P16_Player 
+-- WHERE THE PLAYER HAD ALREADY PARTICIPATED TO GC
 WHERE P16_Player.Player_ID IN (
     SELECT P16_Participate.Player_ID
     FROM P16_Participate
+    -- AND ALSO HAS BEEN A RUNNER UP OR A CHAMPION MORE THEN ONCE
     WHERE (
         SELECT COUNT(*)
         FROM P16_Participate

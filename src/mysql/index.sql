@@ -114,9 +114,9 @@ WHERE GC_ID IN (
         WHERE fst.player_gender LIKE "M%"
         -- FROM THE FIRST GROUP, SELECT ALL THE WOMEN
         AND snd.player_gender LIKE "W%"
-        -- FROM THE FIRST GROUP, SELECT ALL THE CHAMPIONS
+        -- FROM THE FIRST GROUP, SELECT ALL THE CHAMPIONS (MEN)
         AND fst_participation.result LIKE "C%"
-        -- FROM THE SECOND GROUP, SELECT ALL THE CHAMPIONS
+        -- FROM THE SECOND GROUP, SELECT ALL THE CHAMPIONS (WOMEN)
         AND snd_participation.result LIKE "C%"
         -- FROM BOTH GROUPS SELECT THE PAIRS THAT BEEN ON THE SAME GRAND_SLAM
         AND fst_gc.GC_ID = snd_gc.GC_ID

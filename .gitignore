@@ -1,2 +1,6 @@
 .vsCode/*
-./src/ressources/*
+src/ressources/*
+www/node_modules
+www/src/.env
+www/dist/.env
+www/.env

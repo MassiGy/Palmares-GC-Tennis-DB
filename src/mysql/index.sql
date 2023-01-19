@@ -233,3 +233,186 @@ AND P16_Participate.Player_ID = (
     WHERE Player_First_Name = "Iga"
     AND Player_Last_Name = "Swiatek"
 );
+
+
+
+
+-- GET ALL THE FRENCH PLAYERS HAVING A ATP 
+-- RANK < 30
+
+SELECT *
+FROM P16_Player
+WHERE Player_Nationality LIKE "Fr%"
+AND Player_ATP_Rank < 30;
+
+
+-- GET THE COUNT OF PLAYERS FOREACH NATIONNALITY, WHERE Nationality start with S, and the count of players > 3
+
+SELECT
+	 COUNT(*) AS Player_count,
+	 Player_Nationality
+
+FROM P16_Player
+WHERE Player_Nationality LIKE "S%"
+GROUP BY Player_Nationality
+HAVING COUNT(*) > 3;
+
+
+-- GET THE AVERAGE OF ATP_RANK of player foreach nationality
+
+
+SELECT 
+	AVG(Player_ATP_Rank) as avg_player_atp,
+	Player_Nationality
+FROM P16_Player
+GROUP BY Player_Nationality;
+
+
+
+-- SELECT THE NATIONALITY WITH THE HIGHEST AVERAGE ATP_RANK
+
+-- create a view that contains the data
+-- of the previews query
+CREATE VIEW 
+	AVG_ATP_RANK_BY_NATIONALITY
+		(avg_player_atp,player_nationality)
+AS SELECT 
+	AVG(Player_ATP_Rank) as avg_player_atp,
+	Player_Nationality
+FROM P16_Player
+GROUP BY Player_Nationality;
+
+-- from this view, select the max
+
+SELECT 
+	MAX(avg_player_atp) AS max_avg_atp
+FROM AVG_ATP_RANK_BY_NATIONALITY;
+	
+
+
+-- trouvez la meilleure joueuses, et le meilleure joueure de france
+
+-- toute les joueuses de france
+CREATE VIEW JoueuseFR
+AS SELECT * 
+FROM P16_Player
+WHERE Player_Gender LIKE "W%"
+AND Player_Nationality LIKE "Fr%";
+
+	
+-- Le min des atp rank des joueuses de france
+SELECT MIN(Player_ATP_Rank) 
+FROM JoueuseFR; 
+
+
+-- détails sur la meuilleure joueuse de france
+
+SELECT *
+FROM JoueuseFR
+WHERE Player_ATP_Rank = (SELECT MIN(Player_ATP_Rank) FROM JoueuseFR);
+
+
+
+-- Même principe pour les Homme
+
+
+
+-- SELECTIONNER LES MEILLEURE JOUEUSES DANS LE MONDE
+
+-- toute les joueuses du monde
+CREATE VIEW Joueuses
+AS SELECT * 
+FROM P16_Player
+WHERE Player_Gender LIKE "W%"
+
+
+-- Le min des atp rank des joueuses du mSELEonde
+CREATE VIEW meilleures_joueuses(atp_rank,pays)
+AS SELECT 
+	MIN(Player_ATP_Rank), 
+	Player_Nationality
+FROM Joueuses
+GROUP BY Player_Nationality
+HAVING MIN(Player_ATP_Rank) > 0; 
+--otherwise if it is negative, 
+-- it means that the data is not found
+
+-- détails sur la meuilleure joueuses du monde
+
+-- il faut avoir la joueuses qui a le atp rank
+-- egale au min des atp rank dans la view
+-- meilleures joueueses
+
+-- SELECTIONNER LE MIN DES ATP RANK DANS 
+-- LA VIEW MEILLEURES JOUEUESES
+select 
+	min(atp_rank) as meilleurATPFemmes
+from meilleures_joueuses;
+
+-- selectionner le pays de la meuilleure joueuse en connaissant sont apt rank
+
+SELECT pays
+FROM meilleures_joueuses
+WHERE atp_rank = (select min(atp_rank) as atp_rank from meilleures_joueuses
+);
+
+-- selectionner toutes les donnée sur la joueuse depuis la view joueueses qui contient ces données
+
+SELECT * 
+FROM oueuses
+WHERE Player_ATP_Rank = (
+	select 
+	min(atp_rank) as meilleurATPFemmes
+	from meilleures_joueuses)
+AND Player_Nationality  = ( 
+	SELECT pays
+	FROM meilleures_joueuses
+	WHERE atp_rank = (select min(atp_rank) as 	
+	atp_rank from meilleures_joueuses
+	)
+);
+
+
+
+
+-- select all the players data that participated 
+-- to at least to 8 tournament
+
+
+-- SELECT ALL THE PARTICIPATION COUNT FOREACH
+-- PLAYER ID FROM THE TABLE PARTICIPATE
+
+CREATE VIEW player_participation_count 
+AS SELECT 
+	COUNT(GC_ID) as participation_count,
+	Player_ID
+FROM P16_Participate
+GROUP BY Player_ID;
+
+
+-- SELECT ALL THE PLAYERS ID THAT PARTICIPATED 
+-- TO AT LEAST to 8 TOURNAMENTS
+
+SELECT distinct Player_ID
+FROM player_participation_count
+WHERE participation_count >= 8;
+
+
+
+-- GET ALL THE DATA ABOUT THE RETURNED PLAYER_IDS IN THE QUERY ABOVE
+
+SELECT *
+FROM P16_Player 
+WHERE Player_ID IN ( 
+	SELECT distinct Player_ID
+	FROM player_participation_count
+	WHERE participation_count >= 8
+	);
+
+	
+
+
+
+
+
+

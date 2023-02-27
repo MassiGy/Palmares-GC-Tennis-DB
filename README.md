@@ -22,7 +22,7 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
 
 
 
-### Répartition des fichiers
+### Répartition des fichiers pour la partie BDD
 
 ``` Bash
 
@@ -52,14 +52,37 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
 
     6 directories, 16 files
 
+```
 
+### Répartition des fichiers pour la partie web/php
+
+```BASH
+
+    www/php
+    ├── assets
+    │   ├── css
+    │   ├── images
+    │   └── js
+    ├── controllers
+    │   ├── mysql
+    │   └── postgresql
+    ├── database
+    │   ├── mysql.conf.php
+    │   └── postgresql.conf.php
+    ├── env.php
+    ├── modules
+    └── views
+
+    10 directories, 
 
 ```
 
 
+
+
 ### Configuration pour la contribution.
 
-##### For mysql
+#### For mysql
 ```Bash
 
     # pour avoir le code source
@@ -80,7 +103,7 @@ Notre objectif dans ce projet, est de concevoir une base de données permettant 
 ```
 
 
-##### For postgresql
+#### For postgresql
 ```Bash
 
     # pour avoir le code source

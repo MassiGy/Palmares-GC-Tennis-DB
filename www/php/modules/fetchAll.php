@@ -1,7 +1,14 @@
 <?php
 include_once "../utils/sanitize.php";
 
-
+/**
+ * @description: fetchAll, allows us to fetch all the records that fulfills the passed filters, 
+ * by default, these are set to null.
+ * 
+ * @param string $table, which is the name of the table where the query will be performed
+ * @param array|null $filter, defaults to null, which is an associative array that contains key-values pairs
+ * of the colomns and thier values, so as it can be used as filters
+ */
 function fetchAll(string $table, array $filters = NULL): array
 {
     $table = sanitizer($table);

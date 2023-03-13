@@ -1,4 +1,5 @@
 <?php
+    include "../../env.php";
     include "../../database/postgresql.conf.php";
 
     $sql = "SELECT * FROM p16_grand_slam;";

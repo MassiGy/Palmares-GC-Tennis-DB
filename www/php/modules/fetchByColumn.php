@@ -1,6 +1,5 @@
 <?php
 
-include_once "../utils/sanitize.php";
 
 /**
  * @description: fetchByColumn, allows us to fetch all the records that have the given colomn set to the passed

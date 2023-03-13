@@ -1,6 +1,5 @@
 <?php
 
-include_once "../utils/sanitize.php";
 
 
 /**
@@ -47,7 +46,7 @@ function insertOne(string $table, array $payload): int
 
     # exec the insert query
 
-
+    echo $sql;
 
     $result = false;
 

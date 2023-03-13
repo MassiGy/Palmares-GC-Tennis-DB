@@ -1,6 +1,5 @@
 <?php
 
-include_once "../utils/sanitize.php";
 
 
 /**
@@ -25,7 +24,7 @@ function updateOne(string $table, array $payload, array $filters): int
      
         if (!empty($value)) {
 
-            if (strcmp(strval($value), end($payload)[strval($key)]) != 0) {
+            if (strcmp($value, $payload[array_key_last($payload)]) != 0) {
                 $sql .= "$key='$value', ";
             } else {
                 $sql .= "$key='$value' ";
@@ -38,7 +37,7 @@ function updateOne(string $table, array $payload, array $filters): int
     $sql .= " WHERE ";
     foreach ($filters as $colomn => $value) {
 
-        if (strcmp($value, end($filters)[strval($colomn)]) != 0) {
+        if (strcmp($value, $filters[array_key_last($filters)]) != 0) {
             # if the end is not reached yet, chain with an end 
             $sql .= " " . strval($colomn) . " = " . strval($value) . " AND ";
         } else {
@@ -50,6 +49,7 @@ function updateOne(string $table, array $payload, array $filters): int
     # add the missing semi-colomn
     $sql .= " ;";
 
+    echo $sql;
 
 
 

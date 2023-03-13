@@ -1,6 +1,5 @@
 <?php
 
-include_once "../utils/sanitize.php";
 
 
 /**
@@ -16,9 +15,8 @@ function fetchById(string $table, int $id): array
 
     $sql  = "SELECT * FROM $table WHERE '$table'_Id = $id ;";
 
-    // $result = mysqli_fetch_array($this->connection->query($sql), MYSQLI_ASSOC);
-    # we need to make this work with postgresql instead
-    $result = [];
+    
+    $result = pg_query($DB_connect, $sql);
 
     return $result;
 }

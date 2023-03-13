@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="player.php">Players</a>
+                        <a class="nav-link active" aria-current="page" href="player.php">Players</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="grand_slam.php">Grand Slam</a>
@@ -39,6 +39,15 @@
             </div>
         </div>
     </nav>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Player 1</li>
+        <li class="list-group-item">Player 2</li>
+        <li class="list-group-item">Player 3</li>
+        <li class="list-group-item">Player 4</li>
+        <li class="list-group-item">Player 5</li>
+    </ul>
+
 </body>
 
 </html>

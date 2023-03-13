@@ -25,7 +25,7 @@
                         <a class="nav-link" aria-current="page" href="player.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="grand_slam.php">Grand Slam</a>
+                        <a class="nav-link active" aria-current="page" href="grand_slam.php">Grand Slam</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -39,6 +39,14 @@
             </div>
         </div>
     </nav>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Grand Slam 1</li>
+        <li class="list-group-item">Grand Slam 2</li>
+        <li class="list-group-item">Grand Slam 3</li>
+        <li class="list-group-item">Grand Slam 4</li>
+    </ul>
+
 </body>
 
 </html>

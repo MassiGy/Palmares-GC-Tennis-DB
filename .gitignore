@@ -4,3 +4,4 @@ www/typescript/node_modules
 www/src/.env
 www/dist/.env
 www/.env
+www/php/env.php

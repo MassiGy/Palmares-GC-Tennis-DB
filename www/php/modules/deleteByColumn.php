@@ -1,5 +1,6 @@
 <?php 
-include_once "../utils/sanitize.php";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 
 

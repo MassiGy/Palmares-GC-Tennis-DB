@@ -1,7 +1,7 @@
 <?php
 
-include_once "../utils/sanitize.php";
-
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 
 /**
  * @description: fetchById, allows us to fetch a specific  record that matches the passed id, 
@@ -16,9 +16,7 @@ function fetchById(string $table, int $id): array
 
     $sql  = "SELECT * FROM $table WHERE '$table'_Id = $id ;";
 
-    // $result = mysqli_fetch_array($this->connection->query($sql), MYSQLI_ASSOC);
-    # we need to make this work with postgresql instead
-    $result = [];
+    
 
-    return $result;
+    return [];
 }

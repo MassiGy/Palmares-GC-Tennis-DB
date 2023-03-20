@@ -1,5 +1,7 @@
 <?php
-include_once "../utils/sanitize.php";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
+
 
 /**
  * @description: fetchAll, allows us to fetch all the records that fulfills the passed filters, 
@@ -19,16 +21,24 @@ function fetchAll(string $table, array $filters = NULL): array
     {
         $sql.= " WHERE ";
         foreach ($filters as $colomn => $value) {
-            
-            if(strcmp($value, end($filters)[strval($colomn)]) != 0)
+           
+            if(strcmp($value, $filters[array_key_last($filters)]) != 0)
             {
                 # if the end is not reached yet, chain with an end 
-                $sql .= " " . strval($colomn) . " = " . strval($value) . " AND " ;
+
+                if(!is_numeric($value))
+                    $sql .= " $colomn = '$value' AND ";
+                else
+                    $sql .= " $colomn = $value AND ";
+
             }
             else 
             {   
                 # otherwise, do not chain with anything.
-                $sql .= " " . strval($colomn) . " = " . strval($value) ;
+                if(!is_numeric($value))
+                    $sql .= " $colomn = '$value'";
+                else
+                    $sql .= " $colomn = $value ";
             }
         }
     }
@@ -36,6 +46,7 @@ function fetchAll(string $table, array $filters = NULL): array
     # add the missing semi-colomn
     $sql .= " ;";
 
+    echo $sql;
 
     // $result = mysqli_fetch_all($this->connection->query($sql), MYSQLI_ASSOC);
     // $result = pg_query($sql);

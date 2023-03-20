@@ -1,14 +1,15 @@
 <?php
-// include "../../env.php";
-// include "../../database/postgresql.conf.php";
 
 
+include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/updateOne.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/insertOne.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/genAssocForPlayer.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/genAssocForGrandSlam.php";
 
-// $filter = array("player_gender" => "men");
 
-// // fetchAll("p16_participate",$filter);
+$res = genAssocForPlayer("massiles","ghernaout","man","algerian","120");
 
-// $payload = array("name" =>"massigy");
-// insertOne("p16_player", $payload);
 
+insertOne("player_16", $res);
 

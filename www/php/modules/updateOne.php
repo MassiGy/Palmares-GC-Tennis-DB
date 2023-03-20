@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 
 /**
@@ -22,16 +22,23 @@ function updateOne(string $table, array $payload, array $filters): int
 
     # add the new values 
     foreach ($payload as $key => $value) {
-     
+
         if (!empty($value)) {
 
             if (strcmp($value, $payload[array_key_last($payload)]) != 0) {
-                $sql .= "$key='$value', ";
+
+                if (!is_numeric($value))
+                    $sql .= " $key='$value', ";
+                else
+                    $sql .= " $key=$value, ";
             } else {
-                $sql .= "$key='$value' ";
+
+                if (!is_numeric($value))
+                    $sql .= " $key='$value' ";
+                else
+                    $sql .= " $key=$value ";
             }
         }
-  
     }
 
     # add the filters;
@@ -40,10 +47,19 @@ function updateOne(string $table, array $payload, array $filters): int
 
         if (strcmp($value, $filters[array_key_last($filters)]) != 0) {
             # if the end is not reached yet, chain with an end 
-            $sql .= " " . strval($colomn) . " = " . strval($value) . " AND ";
+            if (!is_numeric($value))
+                $sql .= " $colomn = '$value' AND ";
+            else
+                $sql .= " $colomn = $value AND ";
+
+
         } else {
             # otherwise, do not chain with anything.
-            $sql .= " " . strval($colomn) . " = " . strval($value);
+            if (!is_numeric($value))
+                $sql .= " $colomn = '$value' ";
+            else
+                $sql .= " $colomn = $value ";
+
         }
     }
 

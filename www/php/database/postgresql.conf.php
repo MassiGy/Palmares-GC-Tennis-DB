@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/env.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/env.php";
 
 
 $strConnection = "host=" . strval($_ENV["DB_HOST"]) . " dbname=" . strval($_ENV["DB_NAME"])

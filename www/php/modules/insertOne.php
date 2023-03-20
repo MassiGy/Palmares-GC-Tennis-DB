@@ -1,6 +1,6 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 
 /**
@@ -36,9 +36,18 @@ function insertOne(string $table, array $payload): int
     foreach ($values as $val) {
        
         if ($val != end($values)) {
-            $sql .= "'$val',";
+            
+            if(!is_numeric($val))
+                $sql .= " '$val', ";
+            else
+                $sql .= " $val,";
+
         } else {
-            $sql .= "'$val')";
+            
+            if(!is_numeric($val))
+                $sql .= " '$val' ) ";
+            else
+                $sql .= " $val )";
         }
     }
 

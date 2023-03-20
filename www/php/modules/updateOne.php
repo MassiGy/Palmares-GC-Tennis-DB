@@ -14,7 +14,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * 
  */
 
-function updateOne(string $table, array $payload, array $filters): int
+function updateOne(string $table, array $payload, array $filters): string
 {
     $table = sanitizer($table);
 
@@ -66,12 +66,5 @@ function updateOne(string $table, array $payload, array $filters): int
     # add the missing semi-colomn
     $sql .= " ;";
 
-    echo $sql;
-
-
-
-
-    # exec the update query
-    $result = false;
-    return $result == true ? 0 : 1;
+    return $sql;
 }

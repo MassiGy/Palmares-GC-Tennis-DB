@@ -11,7 +11,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * This array should be generated from the utils/ helper functions.
  */
 
-function insertOne(string $table, array $payload): int
+function insertOne(string $table, array $payload): string
 {
     $table = sanitizer($table);
 
@@ -54,12 +54,6 @@ function insertOne(string $table, array $payload): int
     $sql .= " ;";
 
 
-    # exec the insert query
-
-    echo $sql;
-
-    $result = false;
-
-    return $result == true ? 0 : 1;
+    return $sql;
 }
 

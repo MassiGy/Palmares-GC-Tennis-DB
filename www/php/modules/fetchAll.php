@@ -1,5 +1,6 @@
 <?php
 
+include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 
@@ -11,7 +12,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * @param array|null $filter, defaults to null, which is an associative array that contains key-values pairs
  * of the colomns and thier values, so as it can be used as filters
  */
-function fetchAll(string $table, array $filters = NULL): array
+function fetchAll(string $table, array $filters = NULL, int $limit = 30): string
 {
     $table = sanitizer($table);
 
@@ -43,14 +44,12 @@ function fetchAll(string $table, array $filters = NULL): array
         }
     }
 
+    # add the limit if it was given.
+    $sql .= " LIMIT $limit ";
+
+
     # add the missing semi-colomn
     $sql .= " ;";
 
-    echo $sql;
-
-    // $result = mysqli_fetch_all($this->connection->query($sql), MYSQLI_ASSOC);
-    // $result = pg_query($sql);
-    $result = []; # need to change this when we implement the postgresql integration
-
-    return $result;
+    return $sql;
 }

@@ -13,15 +13,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * @param string $value, which is the wanted value of that column.
  */
 
-function deleteOneByColumn(string $table, string $column, string $value): int
+function deleteOneByColumn(string $table, string $column, string $value): string
 {
     $table = sanitizer($table);
 
     $sql  = "DELETE FROM $table WHERE $column = '$value' ;";
 
-    # we need to make this work with prostges instead
-    // $result = connection->query($sql);
-    $result = false;
-    
-    return $result == true ? 0 : 1;
+    return $sql;
 }

@@ -12,7 +12,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * @param string $value, which is the wanted value of that column.
  */
 
-function fetchByColumn(string $table, string $column, string $value): array
+function fetchByColumn(string $table, string $column, string $value): string
 {
     $table = sanitizer($table);
     $column = sanitizer($column);
@@ -20,10 +20,5 @@ function fetchByColumn(string $table, string $column, string $value): array
 
     $sql  = "SELECT * FROM $table WHERE $column = '$value' ;";
 
-    # we need to make this work with postgresql instead.
-    // $result = mysqli_fetch_all($this->connection->query($sql), MYSQLI_ASSOC);
-
-    $result = [];
-
-    return $result;
+    return $sql;
 }

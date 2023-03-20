@@ -1,5 +1,7 @@
 <?php
 
+include $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
+
 
 /**
  * @description: fetchAll, allows us to fetch all the records that fulfills the passed filters, 

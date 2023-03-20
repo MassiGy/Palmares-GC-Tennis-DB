@@ -1,6 +1,6 @@
 <?php
 
-include_once "./sanitize.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 
 /**

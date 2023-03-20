@@ -40,13 +40,72 @@
         </div>
     </nav>
 
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Player 1</li>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Nationality</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">ATP/WTA Rank</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                </tr>
+        </thead>
+        
+        <tbody>
+    
+            <tr>
+                <td>
+                    <img src="../assets/images/players/default.png" class="img-fluid rounded float-left">
+                </td>
+                <td>
+                    FRA
+                    <img src="../assets/images/flags/FRA.png" class="rounded float-left">
+                </td>
+                <td>Julien</td>
+                <td>Furet</td>
+                <td>Man</td>
+                <td>1</td>
+            </tr>
+
+            <?php
+
+                function createPlayer($first_name, $last_name, $gender, $nationality, $atp_rank){
+                    $res = '<tr>
+                        <th scope="row">1</th>
+                        <td>' . $nationality . '
+                        
+                        </td>
+                        <td>' . $first_name . '</td>
+                        <td>' . $last_name . '</td>
+                        <td>' . $gender . '</td>
+                        <td>' . $atp_rank . '</td>
+                    </tr>' ;
+
+                    return $res ;
+                }
+
+                print(createPlayer("Raphaël", "Nadal", "Male", "FRA", 5)) ;
+                print(createPlayer("Raphaël", "Nadal", "Male", "FRA", 5)) ;
+                print(createPlayer("Raphaël", "Nadal", "Male", "FRA", 5)) ;
+                print(createPlayer("Raphaël", "Nadal", "Male", "FRA", 5)) ;
+
+            ?>
+
+        </tbody>
+    </table>
+
+    <!-- <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            Player 1
+        </li>
         <li class="list-group-item">Player 2</li>
         <li class="list-group-item">Player 3</li>
         <li class="list-group-item">Player 4</li>
         <li class="list-group-item">Player 5</li>
-    </ul>
+    </ul> -->
 
 </body>
 

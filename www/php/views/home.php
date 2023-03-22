@@ -39,6 +39,25 @@
             </div>
         </div>
     </nav>
+
+    <main class="container  my-5 d-flex justify-content-center align-items-center">
+
+        <div class="mt-5 text-box d-flex flex-column align-items-center">
+            <h1 class="mb-5">Palmarès GC Tennis</h1>
+
+            <h3>Participants :</h3>
+            <ul>
+                <li>Clément FLAMBARD</li>
+                <li>Julien FURET</li>
+                <li>Massiles GHERNAOUT</li>
+            </ul>
+
+            <a href="https://github.com/MassiGy/Sql_Project">[source code]</a>
+        </div>
+    </main>
+
+
+
 </body>
 
 </html>

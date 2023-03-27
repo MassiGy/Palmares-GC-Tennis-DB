@@ -47,24 +47,19 @@
 
         </div>
 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="player_info d-flex justify-content-between"  style="width:60%;">
-                    <h6>Massiles</h6>
-                    <h6>GHERNAOUT</h6>
-                    <h6>Man</h6>
-                    <h6>Algerian</h6>
-                </div>
-                <div class="player_links">
-                    <a href="" class="btn btn-warning mx-3">Edit</a>
-                    <a href="" class="btn btn-danger">Delete</a>
-                </div>
-            </li>
-            <li class="list-group-item">Player 2</li>
-            <li class="list-group-item">Player 3</li>
-            <li class="list-group-item">Player 4</li>
-            <li class="list-group-item">Player 5</li>
-        </ul>
+
+
+
+
+        <table class="table">
+
+            <tbody>
+
+                <?php include "../controllers/postgresql/renderPlayers.php"; ?>
+
+            </tbody>
+        </table>
+
     </div>
 
 </body>

@@ -48,22 +48,18 @@
 
         </div>
 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="grand_slam_info d-flex justify-content-between" style="width:60%;">
-                    <h6>Rolland</h6>
-                    <h6>Garros</h6>
-                    <h6>France</h6>
-                </div>
-                <div class="grand_slam_links">
-                    <a href="" class="btn btn-warning mx-3">Edit</a>
-                    <a href="" class="btn btn-danger">Delete</a>
-                </div>
-            </li>
-           
-            <li class="list-group-item">Grand Slam</li>
-            <li class="list-group-item">Grand Slam</li>
-        </ul>
+
+
+        <table class="table">
+
+            <tbody>
+
+                <?php include "../controllers/postgresql/renderGrandSlam.php";  ?>
+
+            </tbody>
+        </table>
+
+
     </div>
 
 

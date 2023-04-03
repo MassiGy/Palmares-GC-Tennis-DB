@@ -22,7 +22,12 @@ while ($res = pg_fetch_assoc($results)) {
         <td>' . $res["gc_location"]  . '</td>
         <td>' .  $res["gc_ground"] .  '</td>
         <td><a href="" class="btn btn-warning mx-3">Edit</a></td>
-        <td> <a href="" class="btn btn-danger">Delete</a></td>
+        <td>
+                <form action="/controllers/postgresql/deleteGrandSlam.php" method="post">
+                    <input name ="gc_id" hidden value="' . $res["gc_id"] . '" type="text"/>
+                    <button name="delete_submit" type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
     </tr>
     ';
 

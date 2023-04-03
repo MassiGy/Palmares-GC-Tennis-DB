@@ -43,8 +43,13 @@ while ($res = pg_fetch_assoc($results)) {
             <td>' . $res["player_last_name"]  . '</td>
             <td>' . $res["player_gender"] .  '</td>
             <td>' . $res["player_nationality"] . '</td>
-            <td><a href="" class="btn btn-warning mx-3">Edit</a></td>
-            <td> <a href="" class="btn btn-danger">Delete</a></td>
+            <td> <a href="" class="btn btn-warning mx-3">Edit</a>
+            <td>
+                <form action="/controllers/postgresql/deletePlayers.php" method="post">
+                    <input name ="player_id" hidden value="' . $res["player_id"] . '" type="text"/>
+                    <button name="delete_submit" type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
          </tr>
     ';
 

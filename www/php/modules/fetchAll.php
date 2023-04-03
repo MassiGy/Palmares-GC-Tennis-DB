@@ -1,6 +1,5 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
 
 

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
 </head>
 
-<body>
+<body class="">
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="/views/home.php">
@@ -40,21 +41,43 @@
         </div>
     </nav>
 
-    <main class="container  my-5 d-flex justify-content-center align-items-center">
 
-        <div class="mt-5 text-box d-flex flex-column align-items-center">
-            <h1 class="mb-5">Palmarès GC Tennis</h1>
 
-            <h3>Participants :</h3>
-            <ul>
-                <li>Clément FLAMBARD.</li>
-                <li>Julien FURET.</li>
-                <li>Massiles GHERNAOUT.</li>
-            </ul>
+    <form action="" class="mt-5" style="width:60%; margin:auto">
+        <div class="mt-4 row">
+            <label for="firstName" class="col-form-label">First Name</label>
 
-            <a href="https://github.com/MassiGy/Sql_Project" target="_blank">[source code]</a>
+            <input type="text" class="form-control" id="firstName">
         </div>
-    </main>
+        <div class=" mt-4 row">
+            <label for="lastName" class="col-form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName">
+        </div>
+
+
+        <div class="mt-4 row">
+            <label for="playerGender" class=" col-form-label">Player Gender</label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1">Man</option>
+                <option value="2">Woman</option>
+            </select>
+
+        </div>
+
+
+        <div class="mt-4 row">
+            <label for="playerNationality" class="col-form-label">Player Nationality</label>
+            <input type="text" class="form-control" id="playerNationality">
+        </div>
+        <div class=" mt-4 row">
+            <label for="playerRank" class=" col-form-label">Player ATP Rank</label>
+
+            <input type="text" class="form-control" id="playerRank">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="mt-5 btn btn-primary">Insert Player</button>
+        </div>
+    </form>
 </body>
 
 </html>

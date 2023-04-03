@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
 </head>
 
-<body>
+<body class="">
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/views/home.php">
                 <img src="../assets/images/Logo/GS_Tennis.png" alt="Bootstrap" width="80" height="80">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="player.php">Players</a>
+                        <a class="nav-link" aria-current="page" href="players.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="grand_slam.php">Grand Slam</a>
+                        <a class="nav-link" aria-current="page" href="grandSlams.php">Grand Slam</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -40,13 +41,36 @@
         </div>
     </nav>
 
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Grand Slam 1</li>
-        <li class="list-group-item">Grand Slam 2</li>
-        <li class="list-group-item">Grand Slam 3</li>
-        <li class="list-group-item">Grand Slam 4</li>
-    </ul>
+    <form action="" class="mt-5" style="width:60%; margin:auto">
+        <div class="mt-4 row">
+            <label for="gcName" class="col-form-label">Grand Slam Name</label>
+            <input type="text" class="form-control" id="gcName">
+        </div>
+        <div class=" mt-4 row">
+            <label for="gcLocation" class="col-form-label">Location</label>
+            <input type="text" class="form-control" id="gcLocation">
+        </div>
 
+
+        <div class="mt-4 row">
+            <label for="gcGround" class=" col-form-label">Ground</label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1">Grass</option>
+                <option value="2">Hard</option>
+                <option value="2">Clay</option>
+            </select>
+
+        </div>
+
+        <div class="mt-4 row">
+            <label for="gcYear" class="col-form-label">Creation year</label>
+            <input type="text" class="form-control" id="gcYear">
+        </div>
+       
+        <div class="d-flex justify-content-center">
+            <button class="mt-5 btn btn-primary">Insert Grand Slam</button>
+        </div>
+    </form>
 </body>
 
 </html>

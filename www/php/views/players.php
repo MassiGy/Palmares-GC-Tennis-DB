@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="players.php">Players</a>
+                        <a class="nav-link active" aria-current="page" href="/views/players.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="grandSlams.php">Grand Slam</a>
+                        <a class="nav-link" aria-current="page" href="/views/grandSlams.php">Grand Slam</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -40,21 +40,28 @@
         </div>
     </nav>
 
-    <main class="container  my-5 d-flex justify-content-center align-items-center">
+    <div class="container mt-5">
 
-        <div class="mt-5 text-box d-flex flex-column align-items-center">
-            <h1 class="mb-5">Palmarès GC Tennis</h1>
+        <div class="d-flex my-5">
+            <a href="/views/addPlayer.php" class="btn btn-primary">Insert New Player</a>
 
-            <h3>Participants :</h3>
-            <ul>
-                <li>Clément FLAMBARD.</li>
-                <li>Julien FURET.</li>
-                <li>Massiles GHERNAOUT.</li>
-            </ul>
-
-            <a href="https://github.com/MassiGy/Sql_Project" target="_blank">[source code]</a>
         </div>
-    </main>
+
+
+
+
+
+        <table class="table">
+
+            <tbody>
+
+                <?php include "../controllers/postgresql/renderPlayers.php"; ?>
+
+            </tbody>
+        </table>
+
+    </div>
+
 </body>
 
 </html>

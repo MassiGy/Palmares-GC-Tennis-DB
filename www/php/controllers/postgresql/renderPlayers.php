@@ -4,7 +4,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
 
 
-$sql = fetchAll("p16_player", NULL, 5);
+$sql = fetchAll("p16_player", NULL, 1500);
 
 
 $results = pg_query($DB_connect, $sql);

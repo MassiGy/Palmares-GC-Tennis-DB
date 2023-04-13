@@ -41,10 +41,10 @@
         </div>
     </nav>
 
-    <form action="/controllers/postgresql/addGrandSlam.php" method="post" class="mt-5" style="width:60%; margin:auto">
+    <form action="/controllers/postgresql/editGrandSlam.php" method="post" class="mt-5" style="width:60%; margin:auto">
         <div class="mt-4 row">
             <label for="gcName" class="col-form-label">Grand Slam Name</label>
-            <input type="text" name="gc_name" class="form-control" id="gcName">
+            <input type="text" name="gc_name" class="form-control" id="gcName" value="$_POST["gc_name"]">
         </div>
         <div class=" mt-4 row">
             <label for="gcLocation" class="col-form-label">Location</label>
@@ -68,7 +68,7 @@
         </div>
        
         <div class="d-flex justify-content-center">
-            <button name="insert_submit" type="submit" class="mt-5 btn btn-primary">Insert Grand Slam</button>
+            <button name="edit_submit" type="submit" class="mt-5 btn btn-primary">Edit</button>
         </div>
     </form>
 </body>

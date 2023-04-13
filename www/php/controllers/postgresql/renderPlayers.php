@@ -4,7 +4,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
 
 
-$sql = fetchAll("p16_player", NULL, 5);
+$sql = fetchAll("p16_player", NULL, 50);
 
 
 $results = pg_query($DB_connect, $sql);
@@ -12,37 +12,61 @@ $results = pg_query($DB_connect, $sql);
 
 $markup = "";
 $players_images_dir = $_SERVER["DOCUMENT_ROOT"]. "/assets/images/tennis_players/";
+$players_countries_dir = $_SERVER["DOCUMENT_ROOT"]. "/assets/images/country_flags/";
 
-$players_images_names = scandir($players_images_dir);
-$image_filename;
+$players_face_images_names = scandir($players_images_dir);
+$players_countries_images_names = scandir($players_countries_dir);
+$face_image_filename;
+$country_image_filename;
+
 
 while ($res = pg_fetch_assoc($results)) {
     
-    $found = false;
+    $face_image_found = false;
+    $country_image_found = false;
 
-    $image_filename = strtolower($res["player_first_name"] . $res["player_last_name"]) . '.jpg';
+    $face_image_filename = strtolower($res["player_first_name"] . $res["player_last_name"]) . '.jpg';
+    $country_image_filename = strtolower($res["player_nationality"]) . '.png';
    
     
-    foreach ($players_images_names as $filename) {
+    foreach ($players_face_images_names as $filename) {
 
-        if (strcmp($filename, $image_filename) == 0) {
-            $found = true;
+        if (strcmp($filename, $face_image_filename) == 0) {
+            $face_image_found = true;
             break;
         }
     }
-    
-    if (!$found)
+
+    if (!$face_image_found)
     {
-        $image_filename = "Default_player.png";
+        $face_image_filename = "Default_player.png";
     }
+
+    foreach ($players_countries_images_names as $filename) {
+
+        if (strcmp($filename, $country_image_filename) == 0) {
+            $country_image_found = true;
+            break;
+        }
+    }
+
+    if (!$country_image_found)
+    {
+        $country_image_filename = "default_flag.png";
+    }
+
+    
 
     $markup .= '
         <tr>
-            <td><img src="/assets/images/tennis_players/' .$image_filename . '" alt="images" height=40 width=50 class="img-thumbnail"/></td>
-            <td>' . $res["player_first_name"]  . '</td>
-            <td>' . $res["player_last_name"]  . '</td>
-            <td>' . $res["player_gender"] .  '</td>
-            <td>' . $res["player_nationality"] . '</td>
+            <td style="vertical-align: middle;"  ><img src="/assets/images/tennis_players/' .$face_image_filename . '" alt="images" height=35 width=45 class="img-thumbnail"/></td>
+            <td style="vertical-align: middle;"  >' . $res["player_first_name"]  . '</td>
+            <td style="vertical-align: middle;"  >' . $res["player_last_name"]  . '</td>
+            <td style="vertical-align: middle;"  >' . $res["player_gender"] .  '</td>
+            <td style="vertical-align: middle;"  >
+            <img src="/assets/images/country_flags/' .$country_image_filename . '" alt="images" height=35 width=45 class="img-thumbnail"/>
+            ' . $res["player_nationality"] . '</td>
+            
             <td><a href="" class="btn btn-warning mx-3">Edit</a></td>
             <td> <a href="" class="btn btn-danger">Delete</a></td>
          </tr>

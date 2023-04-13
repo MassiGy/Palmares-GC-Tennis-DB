@@ -15,19 +15,19 @@ $markup = "";
 while ($res = pg_fetch_assoc($results)) {
 
 
-
     $markup .= '
     <tr>
         <td>' . $res["gc_name"]  . '</td>
         <td>' . $res["gc_location"]  . '</td>
         <td>' .  $res["gc_ground"] .  '</td>
         <td>
-            <form method="post">
+            <form action="/views/editGrandSlam.php" method="post">
                 <input name="gc_id" hidden value="' . $res["gc_id"] . '" type="text"/>
                 <input name="gc_name" hidden value="' . $res["gc_name"] . '" type="text"/>
                 <input name="gc_location" hidden value="' . $res["gc_location"] . '" type="text"/>
                 <input name="gc_ground" hidden value="' . $res["gc_ground"] . '" type="text"/>
-                <a href="/views/editGrandSlam.php" class="btn btn-warning mx-3">Edit</a>
+                <input name="gc_creation" hidden value="' . $res["gc_creation"] . '" type="text"/>
+                <button class="btn btn-warning mx-3">Edit</button>
             </form>
         </td>
         <td>

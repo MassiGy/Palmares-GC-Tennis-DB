@@ -6,7 +6,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/genAssocForGrandSlam.php";
 
 if (isset($_POST["edit_submit"])) {
     $sql = updateOne("P16_Grand_Slam", genAssocForGrandSlam($_POST["gc_name"], $_POST["gc_location"], $_POST["gc_ground"],
-    intval($_POST["gc_creation"])), $_POST["gc_id"]);
+    intval($_POST["gc_creation"])), array("gc_id" => intval($_POST["gc_id"]) ));
 
     $results = pg_query($DB_connect, $sql);
 

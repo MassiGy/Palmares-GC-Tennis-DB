@@ -1,3 +1,4 @@
+
 <?php
 
 include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
@@ -43,7 +44,16 @@ while ($res = pg_fetch_assoc($results)) {
             <td>' . $res["player_last_name"]  . '</td>
             <td>' . $res["player_gender"] .  '</td>
             <td>' . $res["player_nationality"] . '</td>
-            <td> <a href="" class="btn btn-warning mx-3">Edit</a>
+            <td>
+                <form action="/views/editPlayer.php" method="post">
+                    <input hidden type="text"  name="player_first_name" value="'. $res["player_first_name"] .'" id="">
+                    <input hidden type="text" name="player_last_name" value="'. $res["player_last_name"] .'" id="">
+                    <input hidden type="text" name="player_gender" value="'. $res["player_gender"] .'" id="">
+                    <input hidden type="text" name="player_nationality" value="'. $res["player_nationality"] .'" id="">
+                    <input hidden type="text" name="player_id" value="'. $res["player_id"] .'" id="">
+                    <input hidden type="text" name="player_atp_rank" value="'. $res["player_atp_rank"] .'" id="">
+                    <button type="submit" name="edit_submit" class="btn btn-warning"> Edit </button>
+                </form>
             <td>
                 <form action="/controllers/postgresql/deletePlayers.php" method="post">
                     <input name ="player_id" hidden value="' . $res["player_id"] . '" type="text"/>
@@ -57,3 +67,6 @@ while ($res = pg_fetch_assoc($results)) {
 
 
 echo $markup;
+
+
+

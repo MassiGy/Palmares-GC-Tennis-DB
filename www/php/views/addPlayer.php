@@ -43,23 +43,23 @@
 
 
 
-    <form action="" class="mt-5" style="width:60%; margin:auto">
+    <form action="/controllers/postgresql/addPlayers.php" method ="post" class="mt-5" style="width:60%; margin:auto">
         <div class="mt-4 row">
             <label for="firstName" class="col-form-label">First Name</label>
 
-            <input type="text" class="form-control" id="firstName">
+            <input type="text" name="player_first_name" class="form-control" id="firstName">
         </div>
         <div class=" mt-4 row">
             <label for="lastName" class="col-form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName">
+            <input type="text" name="player_last_name" class="form-control" id="lastName">
         </div>
 
 
         <div class="mt-4 row">
             <label for="playerGender" class=" col-form-label">Player Gender</label>
-            <select class="form-select" aria-label="Default select example">
-                <option value="1">Man</option>
-                <option value="2">Woman</option>
+            <select class="form-select" name="player_gender" aria-label="Default select example">
+                <option value="Man">Man</option>
+                <option value="Woman">Woman</option>
             </select>
 
         </div>
@@ -67,15 +67,15 @@
 
         <div class="mt-4 row">
             <label for="playerNationality" class="col-form-label">Player Nationality</label>
-            <input type="text" class="form-control" id="playerNationality">
+            <input type="text" name="player_nationality" class="form-control" id="playerNationality">
         </div>
         <div class=" mt-4 row">
             <label for="playerRank" class=" col-form-label">Player ATP Rank</label>
 
-            <input type="text" class="form-control" id="playerRank">
+            <input type="text" name="player_atp_rank" class="form-control" id="playerRank">
         </div>
         <div class="d-flex justify-content-center">
-            <button class="mt-5 btn btn-primary">Insert Player</button>
+            <button name="insert_submit" type="submit" class="mt-5 btn btn-primary">Insert Player</button>
         </div>
     </form>
 </body>

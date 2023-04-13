@@ -41,20 +41,22 @@
         </div>
     </nav>
 
-    <form action="/controllers/postgresql/addGrandSlam.php" method="post" class="mt-5" style="width:60%; margin:auto">
+    <form action="/controllers/postgresql/editGrandSlam.php" method="post" class="mt-5" style="width:60%; margin:auto">
         <div class="mt-4 row">
             <label for="gcName" class="col-form-label">Grand Slam Name</label>
-            <input type="text" name="gc_name" class="form-control" id="gcName">
+            <input type="text" name="gc_id" class="form-control" id="gcId" value="<?php echo $_POST["gc_id"];  ?>" hidden>
+            <input type="text" name="gc_name" class="form-control" id="gcName" value="<?php echo $_POST["gc_name"];  ?>">
         </div>
         <div class=" mt-4 row">
             <label for="gcLocation" class="col-form-label">Location</label>
-            <input type="text" name="gc_location" class="form-control" id="gcLocation">
+            <input type="text" name="gc_location" class="form-control" id="gcLocation" value="<?php echo $_POST["gc_location"];  ?>">
         </div>
 
 
         <div class="mt-4 row">
             <label for="gcGround" class=" col-form-label">Ground</label>
-            <select class="form-select" name="gc_ground" aria-label="Default select example">
+            <select class="form-select" name="gc_ground">
+                <option value="<?php echo $_POST["gc_ground"] ?>" selected="selected"><?php echo $_POST["gc_ground"] ?></option>
                 <option value="Grass">Grass</option>
                 <option value="Hard">Hard</option>
                 <option value="Clay">Clay</option>
@@ -64,11 +66,11 @@
 
         <div class="mt-4 row">
             <label for="gcYear" class="col-form-label">Creation year</label>
-            <input type="text" name="gc_creation" class="form-control" id="gcYear">
+            <input type="text" name="gc_creation" value="<?php echo $_POST["gc_creation"];  ?>" class="form-control" id="gcYear">
         </div>
-       
+
         <div class="d-flex justify-content-center">
-            <button name="insert_submit" type="submit" class="mt-5 btn btn-primary">Insert Grand Slam</button>
+            <button name="edit_submit" type="submit" class="mt-5 btn btn-primary">Edit</button>
         </div>
     </form>
 </body>

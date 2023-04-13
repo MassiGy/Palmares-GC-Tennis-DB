@@ -12,11 +12,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/utils/sanitize.php";
  * 
  */
 
-function deleteOneById(string $table, int $id): string
+function deleteOneById(string $table, string $column, int $id): string
 {
     $table = sanitizer($table);
 
-    $sql  = "DELETE FROM $table WHERE Id = $id ;";
+    $sql  = "DELETE FROM $table WHERE $column = $id ;";
 
     return $sql;
 }

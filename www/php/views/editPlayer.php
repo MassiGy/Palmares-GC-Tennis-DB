@@ -41,34 +41,43 @@
         </div>
     </nav>
 
-    <form action="/controllers/postgresql/addGrandSlam.php" method="post" class="mt-5" style="width:60%; margin:auto">
+
+
+    <form action="/controllers/postgresql/editPlayers.php" method ="post" class="mt-5" style="width:60%; margin:auto">
         <div class="mt-4 row">
-            <label for="gcName" class="col-form-label">Grand Slam Name</label>
-            <input type="text" name="gc_name" class="form-control" id="gcName">
+            <label for="firstName" class="col-form-label">First Name</label>
+            <input type="text" name="player_id"  value="<?php  echo $_POST["player_id"]  ?>" hidden class="form-control" >
+
+            <input type="text" name="player_first_name"  value="<?php  echo $_POST["player_first_name"]  ?>" class="form-control" id="firstName">
         </div>
         <div class=" mt-4 row">
-            <label for="gcLocation" class="col-form-label">Location</label>
-            <input type="text" name="gc_location" class="form-control" id="gcLocation">
+            <label for="lastName" class="col-form-label">Last Name</label>
+            <input type="text" name="player_last_name" value="<?php  echo $_POST["player_last_name"]  ?>" class="form-control" id="lastName">
         </div>
 
 
         <div class="mt-4 row">
-            <label for="gcGround" class=" col-form-label">Ground</label>
-            <select class="form-select" name="gc_ground" aria-label="Default select example">
-                <option value="Grass">Grass</option>
-                <option value="Hard">Hard</option>
-                <option value="Clay">Clay</option>
+            <label for="playerGender" class=" col-form-label">Player Gender</label>
+            <select class="form-select" name="player_gender" aria-label="Default select example">
+                <option value="<?php  echo $_POST["player_gender"]  ?>" selected><?php  echo $_POST["player_gender"]  ?> </option>
+                <option value="Man">Man</option>
+                <option value="Woman">Woman</option>
             </select>
 
         </div>
 
+
         <div class="mt-4 row">
-            <label for="gcYear" class="col-form-label">Creation year</label>
-            <input type="text" name="gc_creation" class="form-control" id="gcYear">
+            <label for="playerNationality" class="col-form-label">Player Nationality</label>
+            <input type="text" name="player_nationality" value="<?php  echo $_POST["player_nationality"]  ?>" class="form-control" id="playerNationality">
         </div>
-       
+        <div class=" mt-4 row">
+            <label for="playerRank" class=" col-form-label">Player ATP Rank</label>
+
+            <input type="text" name="player_atp_rank" class="form-control" value="<?php  echo $_POST["player_atp_rank"]  ?>" id="playerRank">
+        </div>
         <div class="d-flex justify-content-center">
-            <button name="insert_submit" type="submit" class="mt-5 btn btn-primary">Insert Grand Slam</button>
+            <button name="edit_submit" type="submit" class="mt-5 btn btn-primary">Edit</button>
         </div>
     </form>
 </body>

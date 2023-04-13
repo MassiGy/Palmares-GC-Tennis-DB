@@ -42,9 +42,36 @@
 
     <div class="container mt-5">
 
-        <div class="d-flex my-5">
+        <div class="d-flex my-5 justify-content-between">
             <a href="/views/addPlayer.php" class="btn btn-primary">Insert New Player</a>
+            <div  class="d-flex justify-content-between align-items-center" style="width:50%;" >
+            <label for="limiter_form">Rows count: </label>
+            <form action="/views/players.php" method="get" style="text-align: center;width: 80%" id="limiter_form" class="d-flex justify-content-around align-items-center">
+                
+                <div >
 
+                    <input type="radio" name="limit" value="20" id="first_limit">
+                    <label for="first_limit">20 rows</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="limit" value="50" id="second_limit">
+                    <label for="second_limit">50 rows</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="limit" value="100" id="third_limit">
+                    <label for="third_limit">100 rows</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="limit" value="10000" id="fourth_limit">
+                    <label for="fourth_limit">All rows</label>
+                </div>
+
+                <button  class="btn btn-primary">Go &rAarr;</button>
+            </form>
+        </div>
         </div>
 
 
@@ -59,6 +86,7 @@
 
             </tbody>
         </table>
+        
 
     </div>
 

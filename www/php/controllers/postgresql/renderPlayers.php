@@ -5,7 +5,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
 
 
-$sql = fetchAll("p16_player", NULL, 1500);
+$rows_to_render_count = intval($_GET["limit"] == "" ? 5 : $_GET["limit"]);
+
+
+$sql = fetchAll("p16_player", NULL, $rows_to_render_count  );
 
 
 $results = pg_query($DB_connect, $sql);

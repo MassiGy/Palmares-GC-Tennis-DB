@@ -19,6 +19,7 @@ function insertOne(string $table, array $payload): string
 
     $keys = array_keys($payload);
 
+    # add the columns names
     foreach ($keys as $key) {
       
         if (strcmp($key, end($keys)) != 0) {
@@ -33,6 +34,7 @@ function insertOne(string $table, array $payload): string
 
     $values = array_values($payload);
 
+    # add the columns values
     foreach ($values as $val) {
        
         if ($val != end($values)) {

@@ -1,23 +1,25 @@
-
 <?php
 
 include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
 
-
+# get the row limit count
 $rows_to_render_count = intval($_GET["limit"] == "" ? 5 : $_GET["limit"]);
 
+# construct the query string
+$sql = fetchAll("p16_player", NULL, $rows_to_render_count);
 
-$sql = fetchAll("p16_player", NULL, $rows_to_render_count  );
-
-
+# exec the query
 $results = pg_query($DB_connect, $sql);
 
 
 $markup = "";
+
+# set the image faces images dir and the coutry images dir
 $players_images_dir = $_SERVER["DOCUMENT_ROOT"]. "/assets/images/tennis_players/";
 $players_countries_dir = $_SERVER["DOCUMENT_ROOT"]. "/assets/images/country_flags/";
 
+# get the filenames of the available files.
 $players_face_images_names = scandir($players_images_dir);
 $players_countries_images_names = scandir($players_countries_dir);
 $face_image_filename;
@@ -29,10 +31,11 @@ while ($res = pg_fetch_assoc($results)) {
     $face_image_found = false;
     $country_image_found = false;
 
+    # suppose that the filename are equal to the concatination of the record info.
     $face_image_filename = strtolower($res["player_first_name"] . $res["player_last_name"]) . '.jpg';
     $country_image_filename = strtolower($res["player_nationality"]) . '.png';
    
-    
+    # see if the prepared filename is on the dir
     foreach ($players_face_images_names as $filename) {
 
         if (strcmp($filename, $face_image_filename) == 0) {
@@ -40,12 +43,13 @@ while ($res = pg_fetch_assoc($results)) {
             break;
         }
     }
-
+    # otherwise, make it generic
     if (!$face_image_found)
     {
         $face_image_filename = "Default_player.png";
     }
 
+    # see if the prepared filename is on the dir
     foreach ($players_countries_images_names as $filename) {
 
         if (strcmp($filename, $country_image_filename) == 0) {
@@ -54,13 +58,14 @@ while ($res = pg_fetch_assoc($results)) {
         }
     }
 
+    # otherwise, make it generic
     if (!$country_image_found)
     {
         $country_image_filename = "default_flag.png";
     }
 
     
-
+    # append the row info the constructed markup
     $markup .= '
         <tr>
             <td style="vertical-align: middle;"  ><img src="/assets/images/tennis_players/' .$face_image_filename . '" alt="images" height=35 width=45 class="img-thumbnail"/></td>
@@ -92,7 +97,7 @@ while ($res = pg_fetch_assoc($results)) {
 
 }
 
-
+# echo the constructed markup
 echo $markup;
 
 

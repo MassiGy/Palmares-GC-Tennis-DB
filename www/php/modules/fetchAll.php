@@ -17,6 +17,7 @@ function fetchAll(string $table, array $filters = NULL, int $limit = 30): string
 
     $sql  = "SELECT * FROM $table ";
 
+    # add the filters
     if($filters != NULL)
     {
         $sql.= " WHERE ";

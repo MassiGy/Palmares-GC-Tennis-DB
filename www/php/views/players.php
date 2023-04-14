@@ -28,14 +28,6 @@
                         <a class="nav-link" aria-current="page" href="/views/grandSlams.php">Grand Slam</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Grand Slam" aria-label="Search">
-                    <input class="form-control me-2" type="search" placeholder="Player" aria-label="Search">
-                    <input class="form-control me-2" type="search" placeholder="ATP Rank" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
-                        <img src="../assets/images/Logo/zoom-lens.png" alt="Bootstrap" width="40" height="40">
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
@@ -79,11 +71,8 @@
 
 
         <table class="table">
-
             <tbody>
-
                 <?php include "../controllers/postgresql/renderPlayers.php"; ?>
-
             </tbody>
         </table>
         

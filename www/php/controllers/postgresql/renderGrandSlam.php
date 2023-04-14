@@ -3,17 +3,19 @@
 include_once $_SERVER['DOCUMENT_ROOT'] . "/database/postgresql.conf.php";
 include_once $_SERVER['DOCUMENT_ROOT'] . "/modules/fetchAll.php";
 
-
+# construct the sql
 $sql = fetchAll("p16_grand_slam");
 
-
+# get the results
 $results = pg_query($DB_connect, $sql);
 
 
 $markup = "";
 
+# prepare the images dir name
 $grand_slams_images_dir = $_SERVER["DOCUMENT_ROOT"] . "/assets/images/grand_slams/";
 
+# get the images file names
 $grand_slams_images_filenames = scandir($grand_slams_images_dir);
 $grand_slam_filename;
 
@@ -21,9 +23,10 @@ while ($res = pg_fetch_assoc($results)) {
 
     $grand_slam_image_found = false;
 
+    # suppose that the filename is equal to the record info concatination
     $grand_slam_filename = strtolower(str_replace(" ", "", $res["gc_name"])) . '.png';
 
-
+    # check if that name if on the dir
     foreach ($grand_slams_images_filenames as $filename) {
 
         if (strcmp($filename, $grand_slam_filename) == 0) {
@@ -32,11 +35,12 @@ while ($res = pg_fetch_assoc($results)) {
         }
     }
 
+    # if not found, make the image file name set to the generic filename
     if (!$grand_slam_image_found) {
         $grand_slam_filename = "default_image.png";
     }
 
-
+    # append the current row info markup
     $markup .= '
     <tr>
         <td style="vertical-align: middle;"><img src="/assets/images/grand_slams/' .$grand_slam_filename . '" alt="images" height=35 width=45 class="img-thumbnail"/></td>
@@ -63,5 +67,5 @@ while ($res = pg_fetch_assoc($results)) {
     ';
 }
 
-
+# echo the constructed html markup
 echo $markup;

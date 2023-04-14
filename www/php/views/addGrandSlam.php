@@ -29,14 +29,6 @@
                         <a class="nav-link" aria-current="page" href="grandSlams.php">Grand Slam</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Grand Slam" aria-label="Search">
-                    <input class="form-control me-2" type="search" placeholder="Player" aria-label="Search">
-                    <input class="form-control me-2" type="search" placeholder="ATP Rank" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
-                        <img src="../assets/images/Logo/zoom-lens.png" alt="Bootstrap" width="40" height="40">
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
@@ -66,7 +58,7 @@
             <label for="gcYear" class="col-form-label">Creation year</label>
             <input type="text" name="gc_creation" class="form-control" id="gcYear">
         </div>
-       
+
         <div class="d-flex justify-content-center">
             <button name="insert_submit" type="submit" class="mt-5 btn btn-primary">Insert Grand Slam</button>
         </div>

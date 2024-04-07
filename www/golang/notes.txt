@@ -1,0 +1,91 @@
+COMPLET REWRITE OF THE WEB APPLICATION IN GOLANG
+
+this will be our API entry point, for this small project we will rewrite all
+the web application to use golang instead. For database connections we will use
+mysql and the mysql driver go package. 
+
+RESSOURCE/TUTORIAL: https://go.dev/doc/tutorial/database-access
+
+
+STEPS:
+
+- create a directory for the project
+- create a go.mod file with go init <project-name>
+- install the mysql driver dependency using go get <url>
+- create the rest of our project file structure (./controllers, ./database,
+  ./views, ./helpers)
+- create the main.go file which will be our entry point
+- create the database.config.go file so as we can connect to the database.
+- get a mysql connection and print a connection stated message if succeded.
+- setup an http web server.
+- create a controller and test the database connection.
+- create the files that will be our features controllers.
+- build up and code the controllers.
+- create a full CRUD for the player table.
+
+GUIDLINES:
+
+- first, we will start with no views, and only play with plain string and/or
+  json.
+- then, if time allows it, start searching about go templating engines for
+  in-view data injection.
+- finaly, refactor your code and then consider using a framework.
+
+
+After developpement thoughts:
+
+Current project structure: 
+
+.
+├── controllers
+│   ├── add_player.controller.go
+│   ├── delete_player.controller.go
+│   ├── edit_player.controller.go
+│   ├── get_add_player_form.controller.go
+│   ├── get_all_grand_slams.controller.go
+│   ├── get_all_players.controller.go
+│   ├── get_delete_player_form.controller.go
+│   ├── get_edit_player_form.controller.go
+│   ├── get_player.controller.go
+│   ├── home_page.controller.go
+│   └── show_tables.controller.go
+├── database
+│   └── database.config.go
+├── go.mod
+├── go.sum
+├── helpers
+│   ├── delete_player_by_id.helper.go
+│   ├── edit_player_by_id.helper.go
+│   ├── fetch_grand_slams.helper.go
+│   ├── fetch_player_by_id.helper.go
+│   ├── fetch_players.helper.go
+│   ├── format_grand_slam_table_row.helper.go
+│   ├── format_player_table_row.helper.go
+│   └── insert_player.helper.go
+├── main.go
+├── notes.txt
+└── views
+    ├── add_player.html
+    ├── delete_player.html
+    └── index.html
+
+
+I've been through this small project for a day now, and I finished all the 
+specified steps. For the guidlines I've just focused on the first one for 
+simplicity sake.
+
+After doing this project with just vanilla Golang, I feel more familiar with 
+the language and I also understand why a web framework would be really good.
+
+First of all, vanilla Golang does not have intuitive string manipulation utilities, 
+so any idea that envolves manipulating the url paths to get a somewhat working dynamic
+routing system is not really that practical.  
+
+Besides that, vanilla golang does not really support method based routing, so I do 
+miss that comming from Express.
+
+These are the major points of me wanting a web framework to use golang as a server side
+web programming language. Some condidates might be: Gin, Fiber(very Express like), gorilla/mux.
+
+The most popular is Gin, and it is the most documented of them, so it should be a good firt pick.
+

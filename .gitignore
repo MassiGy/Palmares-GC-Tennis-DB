@@ -1,6 +1,7 @@
 .vsCode/*
 src/ressources/*
-www/typescript/node_modules
+www/typescript/node_modules/
+www/typescript/dist/
 www/src/.env
 www/dist/.env
 www/.env

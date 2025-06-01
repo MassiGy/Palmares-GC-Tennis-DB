@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 dotenv.config({ path: __dirname + "/.env" });
 
 import express, { Express } from "express";
+import { readSync } from "fs";
 import path from "path";
 
 const app: Express = express();
